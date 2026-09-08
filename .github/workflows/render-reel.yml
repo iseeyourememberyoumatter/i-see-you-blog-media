@@ -17,7 +17,7 @@ jobs:
   render:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 2
       - name: Install renderer dependencies
@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- reels; then
+          if [ -z "$(git status --porcelain -- reels)" ]; then
             echo "No new Reel output."
             exit 0
           fi
