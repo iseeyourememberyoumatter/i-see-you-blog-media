@@ -1,0 +1,13 @@
+{
+  "schema": "isy-reel-request-v1",
+  "week_id": "WEEK-2C7D846A656B",
+  "content_id": "CONTENT-2C7D846A656B-WED",
+  "seconds_per_slide": 3,
+  "slides": [
+    "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/124abdfef646e127f20e0fabbab00bcbfcd73856/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-WED/slide-1.png",
+    "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0c93bb6824496066b06d114f15bf186f79a0848b/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-WED/slide-2.png",
+    "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/bde37a1484025b3ed5a08410b08325ac4a97cd34/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-WED/slide-3.png",
+    "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/ec29cc6918efb167c048a293290754f31c299de1/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-WED/slide-4.png",
+    "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/df4e9aedc88d4d03babc343ffe427eec60b04c93/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-WED/slide-5.png"
+  ]
+}
