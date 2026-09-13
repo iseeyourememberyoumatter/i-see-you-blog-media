@@ -59,24 +59,26 @@ reel_design_values(){
 family_accent(){ case "$design_family" in LEFT_STORY) echo "$c_olive";; FRAMED_THOUGHT) echo "$c_plum";; CLOSING_GLOW) echo "$c_burg";; *) echo "$c_gold";; esac; }
 footer_color(){ case "$design_family" in QUIET_CENTER) echo "$(color_arg '#03363D')";; LEFT_STORY) echo "$c_olive";; LOWER_REFLECTION) echo "$c_rust";; FRAMED_THOUGHT) echo "$c_plum";; ACCENT_BAND) echo "$c_teal";; REVEAL_FOCUS) echo "$c_char";; CLOSING_GLOW) echo "$c_burg";; esac; }
 text_tone(){ case "$design_family" in QUIET_CENTER|ACCENT_BAND|CLOSING_GLOW) echo LIGHT;; *) if [[ "$preferred_text" == LIGHT || "$preferred_text" == DARK ]]; then echo "$preferred_text"; else case "$design_family" in LEFT_STORY|FRAMED_THOUGHT) echo DARK;; *) echo LIGHT;; esac; fi;; esac; }
+logo_tone(){ case "$design_family" in QUIET_CENTER|ACCENT_BAND|REVEAL_FOCUS|CLOSING_GLOW) echo LIGHT;; *) echo DARK;; esac; }
 text_geometry(){
-  local closing="$1"; tx=151; ty=672; tw=778; th=538; align=center
+  local idx="$1" closing=false strong=false base_x base_y base_w base_h xin yin
+  [[ "$idx" -eq 4 ]] && closing=true
+  [[ "$idx" -eq 0 || "$idx" -eq 4 ]] && strong=true
   case "$design_family" in
-    LEFT_STORY) tx=96; ty=499; tw=618; th=768; align=left;;
-    LOWER_REFLECTION) tx=123; ty=979; tw=834; th=557; align=left;;
-    FRAMED_THOUGHT) tx=215; ty=703; tw=650; th=515; align=center;;
-    ACCENT_BAND) tx=123; ty=576; tw=769; th=692; align=left;;
-    REVEAL_FOCUS) tx=128; ty=595; tw=651; th=768; align=left;;
-    CLOSING_GLOW) tx=177; ty=710; tw=726; th=519; align=center;;
-    QUIET_CENTER) tx=166; ty=691; tw=748; th=500; align=center;;
+    LEFT_STORY) base_x=81; base_y=480; base_w=648; base_h=806; align=left; [[ "$closing" == true ]] && { base_y=499; base_h=826; };;
+    LOWER_REFLECTION) base_x=108; base_y=960; base_w=864; base_h=595; align=left; [[ "$closing" == true ]] && { base_y=922; base_h=653; };;
+    FRAMED_THOUGHT) base_x=173; base_y=653; base_w=734; base_h=614; align=center; [[ "$closing" == true ]] && { base_y=634; base_h=634; };;
+    ACCENT_BAND) base_x=108; base_y=557; base_w=799; base_h=730; align=left; [[ "$closing" == true ]] && { base_y=518; base_h=749; };;
+    REVEAL_FOCUS) base_x=108; base_y=576; base_w=691; base_h=806; align=left; [[ "$closing" == true ]] && { base_y=538; base_h=826; };;
+    CLOSING_GLOW) base_x=162; base_y=691; base_w=756; base_h=557; align=center; [[ "$closing" == true ]] && { base_y=653; base_h=576; };;
+    QUIET_CENTER|*) base_x=151; base_y=672; base_w=778; base_h=538; align=center; [[ "$closing" == true ]] && { base_y=653; base_h=557; };;
   esac
-  if [[ "$closing" == true ]]; then
-    case "$design_family" in
-      LEFT_STORY) ty=518; th=787;; LOWER_REFLECTION) ty=941; th=614;; FRAMED_THOUGHT) ty=684; th=538;; ACCENT_BAND) ty=537; th=711;; REVEAL_FOCUS) ty=557; th=787;; CLOSING_GLOW) ty=672; th=538;; QUIET_CENTER) ty=653; th=519;;
-    esac
-  fi
-  if [[ "$design_position" == RIGHT && "$design_family" =~ ^(LEFT_STORY|ACCENT_BAND|REVEAL_FOCUS)$ ]]; then tx=$((1080-tx-tw)); fi
-  if [[ "$design_position" == CENTER ]]; then tx=$(((1080-tw)/2)); align=center; fi
+  if [[ "$design_position" == RIGHT && "$design_family" =~ ^(LEFT_STORY|ACCENT_BAND|REVEAL_FOCUS)$ ]]; then base_x=$((1080-base_x-base_w)); fi
+  if [[ "$design_position" == CENTER ]]; then base_x=$(((1080-base_w)/2)); align=center; fi
+  if [[ "$strong" == true ]]; then xin=38; yin=46; else xin=15; yin=19; fi
+  if [[ "$design_family" == FRAMED_THOUGHT ]]; then xin=$((xin+27)); yin=$((yin+31)); fi
+  if [[ "$design_family" == LEFT_STORY || "$design_family" == REVEAL_FOCUS ]]; then if [[ "$strong" == true ]]; then xin=$((xin+11)); else xin=$((xin+5)); fi; fi
+  tx=$((base_x+xin)); ty=$((base_y+yin)); tw=$((base_w-2*xin)); th=$((base_h-2*yin))
 }
 family_filter(){
   local accent footer f="" right=0; accent="$(family_accent)"; footer="$(footer_color)"; [[ "$design_position" == RIGHT ]] && right=1
@@ -87,7 +89,7 @@ family_filter(){
       elif [[ $right -eq 1 ]]; then f="drawbox=x=335:y=0:w=745:h=1747:color=$c_ivory@0.68:t=fill,drawbox=x=1014:y=422:w=7:h=845:color=$accent@0.95:t=fill,drawbox=x=810:y=1344:w=189:h=3:color=$accent@0.95:t=fill";
       else f="drawbox=x=0:y=0:w=745:h=1747:color=$c_ivory@0.68:t=fill,drawbox=x=59:y=422:w=7:h=845:color=$accent@0.95:t=fill,drawbox=x=81:y=1344:w=189:h=3:color=$accent@0.95:t=fill"; fi;;
     LOWER_REFLECTION) f="drawbox=x=0:y=1747:w=1080:h=173:color=$c_char@0.58:t=fill,drawbox=x=0:y=1574:w=1080:h=173:color=$c_char@0.48:t=fill,drawbox=x=0:y=1401:w=1080:h=173:color=$c_char@0.39:t=fill,drawbox=x=0:y=1228:w=1080:h=173:color=$c_char@0.29:t=fill,drawbox=x=0:y=1055:w=1080:h=173:color=$c_char@0.19:t=fill,drawbox=x=0:y=882:w=1080:h=173:color=$c_char@0.10:t=fill,drawbox=x=108:y=1536:w=270:h=3:color=$accent@0.95:t=fill";;
-    FRAMED_THOUGHT) f="drawbox=x=0:y=0:w=1080:h=1920:color=$c_plum@0.10:t=fill,drawbox=x=130:y=530:w=820:h=760:color=$c_ivory@0.90:t=fill,drawbox=x=130:y=530:w=820:h=760:color=$c_plum@0.95:t=6,drawbox=x=360:y=585:w=360:h=3:color=$c_plum@0.95:t=fill";;
+    FRAMED_THOUGHT) local fx=$((tx-49)) fy=$((ty-96)) fr=$((tx+tw+49)) fb=$((ty+th+92)); (( fx<81 )) && fx=81; (( fy<384 )) && fy=384; (( fr>999 )) && fr=999; (( fb>1622 )) && fb=1622; local fw=$((fr-fx)) fh=$((fb-fy)) fax1=$((fx+fw*28/100)) fax2=$((fx+fw-fw*28/100)) fay=$((fy+fh*75/1000)); f="drawbox=x=0:y=0:w=1080:h=1920:color=$c_plum@0.10:t=fill,drawbox=x=$fx:y=$fy:w=$fw:h=$fh:color=$c_ivory@0.90:t=fill,drawbox=x=$fx:y=$fy:w=$fw:h=$fh:color=$c_plum@0.95:t=6,drawbox=x=$fax1:y=$fay:w=$((fax2-fax1)):h=3:color=$c_plum@0.95:t=fill";;
     ACCENT_BAND) f="drawbox=x=0:y=0:w=1080:h=1920:color=$c_char@0.48:t=fill,drawbox=x=0:y=1382:w=1080:h=106:color=$c_teal@0.92:t=fill"; if [[ "$design_position" == CENTER ]]; then f+=",drawbox=x=410:y=470:w=260:h=5:color=$c_teal@0.98:t=fill"; elif [[ $right -eq 1 ]]; then f+=",drawbox=x=713:y=470:w=259:h=5:color=$c_teal@0.98:t=fill"; else f+=",drawbox=x=108:y=470:w=259:h=5:color=$c_teal@0.98:t=fill"; fi;;
     REVEAL_FOCUS)
       if [[ "$design_position" == CENTER ]]; then f="drawbox=x=119:y=346:w=140:h=1114:color=$c_char@0.30:t=fill,drawbox=x=259:y=346:w=140:h=1114:color=$c_char@0.35:t=fill,drawbox=x=399:y=346:w=140:h=1114:color=$c_char@0.40:t=fill,drawbox=x=539:y=346:w=140:h=1114:color=$c_char@0.40:t=fill,drawbox=x=679:y=346:w=140:h=1114:color=$c_char@0.35:t=fill,drawbox=x=819:y=346:w=140:h=1114:color=$c_char@0.30:t=fill,drawbox=x=410:y=1382:w=260:h=4:color=$accent@0.98:t=fill";
@@ -100,10 +102,71 @@ family_filter(){
   [[ "$film_a" != 0 ]] && f+=",drawbox=x=0:y=0:w=1080:h=1920:color=$film_c@$film_a:t=fill"
   text_a="$(alpha_for_support "$text_support")"; tone="$(text_tone)"; if [[ "$text_a" != 0 ]]; then local support_c="$c_ivory"; [[ "$tone" == LIGHT ]] && support_c="$c_char"; f+=",drawbox=x=$((tx-27)):y=$((ty-38)):w=$((tw+54)):h=$((th+76)):color=$support_c@$text_a:t=fill"; fi
   logo_a="$(alpha_for_support "$logo_support")"; if [[ "$logo_a" != 0 ]]; then local logo_c="$c_ivory"; [[ "$tone" == LIGHT ]] && logo_c="$c_char"; f+=",drawbox=x=0:y=0:w=1080:h=288:color=$logo_c@$logo_a:t=fill"; fi
-  f+=",drawbox=x=0:y=1776:w=1080:h=144:color=$footer@0.96:t=fill,drawbox=x=0:y=1776:w=1080:h=3:color=$c_gold@0.98:t=fill"
+  f+=",drawbox=x=0:y=1776:w=1080:h=144:color=$footer@0.96:t=fill,drawbox=x=0:y=1776:w=1080:h=3:color=$c_gold@0.98:t=fill,drawbox=x=76:y=1848:w=130:h=3:color=$c_gold@0.98:t=fill,drawbox=x=211:y=1842:w=11:h=11:color=$c_gold@0.98:t=fill,drawbox=x=875:y=1848:w=130:h=3:color=$c_gold@0.98:t=fill,drawbox=x=858:y=1842:w=11:h=11:color=$c_gold@0.98:t=fill"
   printf '%s' "$f"
 }
-render_v3_native(){ local count; count="$(jq -r '.overlay.slides | length' "$request" 2>/dev/null || echo 0)"; [[ "$count" == "5" ]] || { echo "Invalid v3 Reel request: overlay.slides must contain exactly five story beats." >&2; exit 1; }; reel_design_values || exit 1; mapfile -t static_slides < <(jq -r '.fallback.static_slides[]? // empty' "$request"); if [[ "$allow_static_slides" == "true" && ${#static_slides[@]} -ne 5 ]]; then echo "Invalid v3 Reel request: static fallback requires exactly five static_slides." >&2; exit 1; fi; local total=$((duration*5)); if ! normalize_cinematic "$total"; then [[ "$allow_static_slides" == "true" ]] || { echo "Cinematic clip unavailable and static fallback is disabled." >&2; exit 1; }; render_all_static static_slides; echo 0; return; fi; local font_regular font_bold font_serif font_serif_bold; font_regular="$(fc-match -f '%{file}\n' 'DejaVu Sans' | head -1)"; font_bold="$(fc-match -f '%{file}\n' 'DejaVu Sans:style=Bold' | head -1)"; font_serif="$(fc-match -f '%{file}\n' 'Georgia' | head -1)"; font_serif_bold="$(fc-match -f '%{file}\n' 'Georgia:style=Bold' | head -1)"; [[ -f "$font_regular" ]] || { echo "A usable sans-serif font was not found." >&2; return 1; }; [[ -f "$font_bold" ]] || font_bold="$font_regular"; [[ -f "$font_serif" ]] || font_serif="$font_regular"; [[ -f "$font_serif_bold" ]] || font_serif_bold="$font_serif"; local brand_name brand_tagline; brand_name="$(jq -r '.overlay.brand.name // "I See You"' "$request")"; brand_tagline="$(jq -r '.overlay.brand.tagline // "Remember, You Matter"' "$request")"; printf '%s' "$brand_name" > "$work/brand.txt"; printf '%s' "$brand_tagline" > "$work/tagline.txt"; : > "$work/native_concat.txt"; local native_ok=1; for i in 0 1 2 3 4; do local raw="$work/raw_$i.txt" text="$work/text_$i.txt" part="$work/native_$i.mp4" closing=false; [[ "$i" -eq 4 ]] && closing=true; jq -r ".overlay.slides[$i].text // empty" "$request" > "$raw"; [[ -s "$raw" ]] || { native_ok=0; break; }; wrap_text_file "$raw" "$text"; text_geometry "$closing"; local chars fontsize offset tone textcolor textx texty filters; chars="$(wc -m < "$raw" | tr -d ' ')"; if [[ "$chars" -le 70 ]]; then fontsize=62; elif [[ "$chars" -le 120 ]]; then fontsize=56; else fontsize=50; fi; [[ "$design_family" == FRAMED_THOUGHT && "$fontsize" -gt 54 ]] && fontsize=54; offset=$((i*duration)); tone="$(text_tone)"; textcolor="$c_white"; [[ "$tone" == DARK ]] && textcolor="$c_dark"; textx="$tx"; [[ "$align" == center ]] && textx='(w-text_w)/2'; texty="$((ty+th/2))-(text_h/2)"; filters="$(family_filter)"; filters+=",drawtext=fontfile='$font_serif_bold':textfile='$work/brand.txt':fontcolor=$c_white@0.96:fontsize=44:x=(w-text_w)/2:y=70:shadowcolor=$c_char@0.70:shadowx=2:shadowy=2"; filters+=",drawtext=fontfile='$font_serif':textfile='$text':fontcolor=$textcolor:fontsize=$fontsize:line_spacing=18:x=$textx:y=$texty:shadowcolor=$c_char@0.72:shadowx=3:shadowy=3"; if [[ "$closing" == true && "$design_family" != FRAMED_THOUGHT ]]; then filters+=",drawbox=x=$((tx+tw*34/100)):y=$((ty+th+35)):w=$((tw*32/100)):h=3:color=$(family_accent)@0.95:t=fill"; fi; filters+=",drawtext=fontfile='$font_serif':textfile='$work/tagline.txt':fontcolor=$c_white@0.94:fontsize=31:x=(w-text_w)/2:y=1820:shadowcolor=$c_char@0.60:shadowx=2:shadowy=2,format=yuv420p"; if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -t "$duration" -vf "$filters" -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi; printf "file '%s'\n" "$part" >> "$work/native_concat.txt"; done; if [[ "$native_ok" -eq 1 ]]; then mv "$work/native_concat.txt" "$work/concat.txt"; echo 1; return; fi; [[ "$allow_static_slides" == "true" ]] || { echo "Native cinematic design overlay failed and static fallback is disabled." >&2; exit 1; }; render_all_static static_slides; echo 0; }
+render_v3_native(){
+  local count; count="$(jq -r '.overlay.slides | length' "$request" 2>/dev/null || echo 0)"; [[ "$count" == "5" ]] || { echo "Invalid v3 Reel request: overlay.slides must contain exactly five story beats." >&2; exit 1; }
+  reel_design_values || exit 1
+  mapfile -t static_slides < <(jq -r '.fallback.static_slides[]? // empty' "$request")
+  if [[ "$allow_static_slides" == "true" && ${#static_slides[@]} -ne 5 ]]; then echo "Invalid v3 Reel request: static fallback requires exactly five static_slides." >&2; exit 1; fi
+  local total=$((duration*5)); if ! normalize_cinematic "$total"; then [[ "$allow_static_slides" == "true" ]] || { echo "Cinematic clip unavailable and static fallback is disabled." >&2; exit 1; }; render_all_static static_slides; echo 0; return; fi
+
+  local font_family font_match font_serif font_serif_bold font_serif_italic
+  font_family="$(jq -r '.overlay.brand.font_family // "Georgia"' "$request")"
+  font_match="$(fc-match -f '%{family}|%{file}\n' "$font_family" | head -1)"
+  IFS='|' read -r matched_family font_serif <<< "$font_match"
+  [[ -f "$font_serif" ]] || { echo "Required Reel serif font is unavailable: $font_family" >&2; return 1; }
+  [[ "${matched_family,,}" == *"${font_family,,}"* ]] || { echo "Required Reel font did not resolve exactly: requested=$font_family matched=$matched_family" >&2; return 1; }
+  font_serif_bold="$(fc-match -f '%{file}\n' "$font_family:style=Bold" | head -1)"; [[ -f "$font_serif_bold" ]] || font_serif_bold="$font_serif"
+  font_serif_italic="$(fc-match -f '%{file}\n' "$font_family:style=Italic" | head -1)"; [[ -f "$font_serif_italic" ]] || font_serif_italic="$font_serif"
+
+  local brand_tagline logo_light_url logo_dark_url
+  brand_tagline="$(jq -r '.overlay.brand.tagline // "Remember, You Matter"' "$request")"
+  logo_light_url="$(jq -r '.overlay.brand.logo_light_url // empty' "$request")"
+  logo_dark_url="$(jq -r '.overlay.brand.logo_dark_url // empty' "$request")"
+  [[ -n "$logo_light_url" && -n "$logo_dark_url" ]] || { echo "Approved Reel logo URLs are missing." >&2; return 1; }
+  curl -fsSL --retry 3 --retry-delay 2 "$logo_light_url" -o "$work/logo_light" || { echo "Approved light Reel logo could not be loaded." >&2; return 1; }
+  curl -fsSL --retry 3 --retry-delay 2 "$logo_dark_url" -o "$work/logo_dark" || { echo "Approved dark Reel logo could not be loaded." >&2; return 1; }
+  printf '%s' "$brand_tagline" > "$work/tagline.txt"
+
+  : > "$work/native_concat.txt"; local native_ok=1
+  for i in 0 1 2 3 4; do
+    local raw="$work/raw_$i.txt" text="$work/text_$i.txt" part="$work/native_$i.mp4" closing=false; [[ "$i" -eq 4 ]] && closing=true
+    jq -r ".overlay.slides[$i].text // empty" "$request" > "$raw"; [[ -s "$raw" ]] || { native_ok=0; break; }
+    wrap_text_file "$raw" "$text"; text_geometry "$i"
+    local chars words fontsize offset tone textcolor textx texty filters textfont logotone logofile logow logox logoy
+    chars="$(wc -m < "$raw" | tr -d ' ')"; words="$(wc -w < "$raw" | tr -d ' ')"
+    if [[ "$i" -eq 0 || "$i" -eq 4 ]]; then fontsize=60; else fontsize=58; fi
+    (( words>8 || chars>74 )) && fontsize=$((fontsize-2))
+    (( words>11 || chars>96 )) && fontsize=$((fontsize-2))
+    (( words>14 || chars>118 )) && fontsize=$((fontsize-2))
+    (( words>17 || chars>140 )) && fontsize=$((fontsize-2))
+    (( words>20 || chars>164 )) && fontsize=$((fontsize-2))
+    (( words>24 || chars>190 )) && fontsize=$((fontsize-2))
+    [[ "$design_family" == FRAMED_THOUGHT && "$fontsize" -gt 56 ]] && fontsize=56
+    [[ "$fontsize" -lt 44 ]] && fontsize=44
+    textfont="$font_serif"; [[ "$i" -eq 0 || "$i" -eq 4 ]] && textfont="$font_serif_bold"
+    offset=$((i*duration)); tone="$(text_tone)"; textcolor="$c_white"; [[ "$tone" == DARK ]] && textcolor="$c_dark"
+    textx="$tx"; [[ "$align" == center ]] && textx='(w-text_w)/2'; texty="$((ty+th/2))-(text_h/2)"
+    filters="$(family_filter)"
+    filters+=",drawtext=fontfile='$textfont':textfile='$work/text_$i.txt':fontcolor=$textcolor:fontsize=$fontsize:line_spacing=16:x=$textx:y=$texty:shadowcolor=$c_char@0.68:shadowx=2:shadowy=2"
+    if [[ "$closing" == true && "$design_family" != FRAMED_THOUGHT ]]; then filters+=",drawbox=x=$((tx+tw*34/100)):y=$((ty+th+35)):w=$((tw*32/100)):h=3:color=$(family_accent)@0.95:t=fill"; fi
+    filters+=",drawtext=fontfile='$font_serif_italic':textfile='$work/tagline.txt':fontcolor=$c_white@0.96:fontsize=34:x=(w-text_w)/2:y=1817"
+
+    logotone="$(logo_tone)"; logofile="$work/logo_dark"; [[ "$logotone" == LIGHT ]] && logofile="$work/logo_light"
+    if [[ "$i" -eq 0 ]]; then logow=243; elif [[ "$i" -eq 4 ]]; then logow=232; else logow=200; fi
+    logox=$(((1080-logow)/2)); logoy=42
+    if [[ "$design_position" != CENTER && "$design_family" =~ ^(LEFT_STORY|ACCENT_BAND|REVEAL_FOCUS)$ ]]; then
+      if [[ "$design_position" == RIGHT ]]; then logox=$((1080-logow-81)); else logox=81; fi
+    fi
+    if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$logofile" -t "$duration" -filter_complex "[0:v]$filters[base];[1:v]scale=$logow:-1[logo];[base][logo]overlay=$logox:$logoy:format=auto,format=yuv420p[outv]" -map '[outv]' -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi
+    printf "file '%s'\n" "$part" >> "$work/native_concat.txt"
+  done
+  if [[ "$native_ok" -eq 1 ]]; then mv "$work/native_concat.txt" "$work/concat.txt"; echo 1; return; fi
+  echo "Native cinematic design did not meet the exact brand rendering contract; Reel was not marked ready." >&2
+  return 1
+}
 ambient_frequencies(){ case "$music_mood" in RENEWAL|HOPE|OPENNESS) echo '196 246.94 293.66';; CALM|STILLNESS) echo '220 277.18 329.63';; REFLECTION|GRIEF|LONELINESS) echo '174.61 220 261.63';; *) echo '196 246.94 293.66';; esac; }
 render_soft_music(){ local total="$1" fade; fade=$((total>2?total-2:0)); read -r f1 f2 f3 <<< "$(ambient_frequencies)"; ffmpeg -y -loglevel error -f lavfi -i "sine=frequency=$f1:sample_rate=44100:duration=$total" -f lavfi -i "sine=frequency=$f2:sample_rate=44100:duration=$total" -f lavfi -i "sine=frequency=$f3:sample_rate=44100:duration=$total" -filter_complex "[0:a]volume=0.18[a0];[1:a]volume=0.15[a1];[2:a]volume=0.12[a2];[a0][a1][a2]amix=inputs=3:normalize=0,highpass=f=90,lowpass=f=1200,afade=t=in:st=0:d=1.5,afade=t=out:st=$fade:d=2[a]" -map '[a]' -c:a aac -b:a 96k "$work/soft-music.m4a"; }
 
