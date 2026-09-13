@@ -1,0 +1,62 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-91f5f9e8-cbf3-49e4-ba47-52337fbbfde6",
+  "week_id": "WEEK-2C7D846A656B",
+  "content_id": "CONTENT-2C7D846A656B-SUN",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-SNOWLIGHT-001",
+    "category": "SNOW_LIGHT",
+    "subtype": "SNOW_LIGHT",
+    "mood": "HOPE",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-SNOWLIGHT-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "NATURAL_REPEAT"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember You Matter"
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "A life is shaped as much by what we lay down as what we carry forward."
+      },
+      {
+        "index": 2,
+        "text": "The unlaunched projects, the quiet plateaus, the edits made without announcements."
+      },
+      {
+        "index": 3,
+        "text": "None of these are signs that you lost your discipline or gave up on yourself."
+      },
+      {
+        "index": 4,
+        "text": "They are simply the slow, necessary work of choosing reality over expectation."
+      },
+      {
+        "index": 5,
+        "text": "You didn't fail at becoming that old draft; you just grew into someone real."
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HOPE",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/41b3b292f069b631f1a3afc84d47076bb8743a03/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/befa79925245b212499524d7a8f0a64166ac8793/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c80d49595b3a26cc77e72ac21597a8f18c121794/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/85ca70181ac1ff00f3c114aba8b8a625b523ab7c/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d2f5206d9a44aef39c7ad2294f09ebc8b841dc67/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-5.png"
+    ]
+  }
+}
