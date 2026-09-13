@@ -1,11 +1,11 @@
 {
   "status": "READY",
-  "render_id": "RENDER-e961b6e7-a26c-4c95-bc88-12bc5e9dd817",
+  "render_id": "RENDER-e2d2f4ab-803e-43c2-9e4b-92c55a5bd529",
   "schema": "isy-reel-request-v3",
   "audio": true,
   "music_source": "BUILT_IN_AMBIENT_V1",
   "design_family": "",
   "design_position": "",
-  "layout": "NATIVE_STORY_DESIGN_V2",
-  "rendered_at": "2026-09-13T15:48:08Z"
+  "layout": "NATIVE_STORY_DESIGN_V3",
+  "rendered_at": "2026-09-13T16:14:54Z"
 }
