@@ -1,6 +1,6 @@
 {
   "schema": "isy-reel-request-v3",
-  "render_id": "RENDER-f27b2164-47ec-4c57-ad4f-af4b087cb451",
+  "render_id": "RENDER-e961b6e7-a26c-4c95-bc88-12bc5e9dd817",
   "week_id": "WEEK-2C7D846A656B",
   "content_id": "CONTENT-2C7D846A656B-SUN",
   "seconds_per_slide": 3,
@@ -14,31 +14,83 @@
     "loop_mode": "NATURAL_REPEAT"
   },
   "overlay": {
-    "layout": "NATIVE_STORY",
+    "layout": "NATIVE_STORY_DESIGN_V2",
     "brand": {
       "name": "I See You",
-      "tagline": "Remember You Matter"
+      "tagline": "Remember, You Matter"
+    },
+    "design": {
+      "family": "CLOSING_GLOW",
+      "position": "CENTER",
+      "variant_key": "BG-000094::CENTER",
+      "asset_id": "BG-000094",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
     },
     "slides": [
       {
         "index": 1,
-        "text": "A life is shaped as much by what we lay down as what we carry forward."
+        "text": "A life is shaped as much by what we lay down as what we carry forward.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
       },
       {
         "index": 2,
-        "text": "The unlaunched projects, the quiet plateaus, the edits made without announcements."
+        "text": "The unlaunched projects, the quiet plateaus, the edits made without announcements.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
       },
       {
         "index": 3,
-        "text": "None of these are signs that you lost your discipline or gave up on yourself."
+        "text": "None of these are signs that you lost your discipline or gave up on yourself.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
       },
       {
         "index": 4,
-        "text": "They are simply the slow, necessary work of choosing reality over expectation."
+        "text": "They are simply the slow, necessary work of choosing reality over expectation.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
       },
       {
         "index": 5,
-        "text": "You didn't fail at becoming that old draft; you just grew into someone real."
+        "text": "You didn't fail at becoming that old draft; you just grew into someone real.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
       }
     ]
   },
@@ -52,11 +104,11 @@
   "fallback": {
     "allow_static_slides": true,
     "static_slides": [
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0bb083032b63c26a1be99846fa9e517901d91f31/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-1.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/bdf140450d48dd78a7715f01f76318da96718725/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-2.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c0551d6f5d043904cda23cd5349700555cf0a795/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-3.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/17114eb70c6b461aa8a6a0fd31fa30d6adf75e2e/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-4.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/46254b04945ba7f5cb0d175832baa329c04287ba/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-5.png"
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/725a812bb6d54d840aaff192ef7910c82dac28b0/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/07a9e5c9603337dd8f9bb48c4de660e6c61f893b/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/16e33953dbebf6357e0918641430b435926211f6/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1882193ad0d096f8190ed21207d8b12c84dc87ae/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b4245dfee7acd8c6546fee3a3da884485edf667d/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-5.png"
     ]
   }
 }
