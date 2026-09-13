@@ -1,6 +1,6 @@
 {
   "schema": "isy-reel-request-v3",
-  "render_id": "RENDER-e961b6e7-a26c-4c95-bc88-12bc5e9dd817",
+  "render_id": "RENDER-e2d2f4ab-803e-43c2-9e4b-92c55a5bd529",
   "week_id": "WEEK-2C7D846A656B",
   "content_id": "CONTENT-2C7D846A656B-SUN",
   "seconds_per_slide": 3,
@@ -14,10 +14,13 @@
     "loop_mode": "NATURAL_REPEAT"
   },
   "overlay": {
-    "layout": "NATIVE_STORY_DESIGN_V2",
+    "layout": "NATIVE_STORY_DESIGN_V3",
     "brand": {
       "name": "I See You",
-      "tagline": "Remember, You Matter"
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
     },
     "design": {
       "family": "CLOSING_GLOW",
@@ -104,11 +107,11 @@
   "fallback": {
     "allow_static_slides": true,
     "static_slides": [
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/725a812bb6d54d840aaff192ef7910c82dac28b0/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-1.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/07a9e5c9603337dd8f9bb48c4de660e6c61f893b/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-2.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/16e33953dbebf6357e0918641430b435926211f6/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-3.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1882193ad0d096f8190ed21207d8b12c84dc87ae/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-4.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b4245dfee7acd8c6546fee3a3da884485edf667d/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-5.png"
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6f804e0aa712c4a41af0ed8c4b62a8a1ad43c4ac/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/bda57807e263e9cbd3a891153c957324914eb29a/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/f00c65eb0c9dbe57da84eff8e289964f942c2777/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/cd3d48a0752643d7b42911fcead8c2f1013171e3/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/cd6d27fa8bc78db33e5056987b9f6d3ab4b2cee9/social/2026/WEEK-2C7D846A656B/CONTENT-2C7D846A656B-SUN/slide-5.png"
     ]
   }
 }
