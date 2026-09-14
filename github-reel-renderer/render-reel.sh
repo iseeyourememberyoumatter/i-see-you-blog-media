@@ -25,6 +25,16 @@ download_slide(){ local url="$1" target="$2"; curl -fsSL --retry 3 --retry-delay
 render_static_part(){ local slide="$1" part="$2"; ffmpeg -y -loglevel error -loop 1 -i "$slide" -t "$duration" -vf "split=2[bg][fg];[bg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=24[bg2];[fg]scale=1080:1350:force_original_aspect_ratio=decrease[fg2];[bg2][fg2]overlay=(W-w)/2:(H-h)/2,format=yuv420p" -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; }
 render_all_static(){ local -n a=$1; : > "$work/concat.txt"; for i in "${!a[@]}"; do local slide="$work/static_$i.png" part="$work/static_$i.mp4"; download_slide "${a[$i]}" "$slide"; render_static_part "$slide" "$part"; printf "file '%s'\n" "$part" >> "$work/concat.txt"; done; }
 normalize_cinematic(){ local total="$1"; [[ -n "$cinematic_url" ]] || return 1; curl -fsSL --retry 2 --retry-delay 2 "$cinematic_url" -o "$work/cinematic_source" || return 1; ffprobe -v error -select_streams v:0 -show_entries stream=codec_type -of csv=p=0 "$work/cinematic_source" | grep -q video || return 1; ffmpeg -y -loglevel error -stream_loop -1 -i "$work/cinematic_source" -t "$total" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,format=yuv420p" -c:v libx264 -preset medium -crf 21 -pix_fmt yuv420p -movflags +faststart -an "$work/cinematic_bg.mp4"; }
+normalize_logo_asset(){
+  local source_url="$1" raw="$2" normalized="$3" label="$4" alpha_avg dims
+  curl -fsSL --retry 3 --retry-delay 2 "$source_url" -o "$raw" || { echo "Approved $label Reel logo could not be loaded." >&2; return 1; }
+  ffmpeg -y -loglevel error -i "$raw" -vf "format=rgba" -frames:v 1 "$normalized" || { echo "Approved $label Reel logo could not be normalized to RGBA PNG." >&2; return 1; }
+  dims="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,pix_fmt -of csv=p=0:s=x "$normalized")"
+  [[ "$dims" == *"rgba"* ]] || { echo "Approved $label Reel logo did not normalize to RGBA: $dims" >&2; return 1; }
+  alpha_avg="$(ffmpeg -v error -i "$normalized" -vf "alphaextract,signalstats,metadata=print:file=-" -frames:v 1 -f null - 2>&1 | awk -F= '/lavfi.signalstats.YAVG=/{print $2; exit}')"
+  [[ -n "$alpha_avg" ]] || { echo "Approved $label Reel logo alpha could not be measured." >&2; return 1; }
+  awk -v a="$alpha_avg" 'BEGIN{exit !(a>1.0)}' || { echo "Approved $label Reel logo is effectively transparent (alpha_avg=$alpha_avg)." >&2; return 1; }
+}
 render_legacy(){ mapfile -t slides < <(jq -r '.slides[]?' "$request"); [[ ${#slides[@]} -eq 5 ]] || { echo "Invalid legacy Reel request: exactly five slides are required." >&2; exit 1; }; local cinematic_ok=0 total=$((duration*5)); if normalize_cinematic "$total"; then cinematic_ok=1; fi; : > "$work/concat.txt"; for i in "${!slides[@]}"; do local slide="$work/legacy_$i.png" part="$work/legacy_$i.mp4"; download_slide "${slides[$i]}" "$slide"; if [[ "$cinematic_ok" -eq 1 ]]; then local offset=$((i*duration)); if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$slide" -t "$duration" -filter_complex "[0:v]drawbox=x=70:y=377:w=940:h=1166:color=black@0.18:t=fill[bg];[1:v]scale=900:1125:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p" -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then cinematic_ok=0; render_static_part "$slide" "$part"; fi; else [[ "$allow_static_slides" == "true" ]] || { echo "Cinematic clip unavailable and static fallback is disabled." >&2; exit 1; }; render_static_part "$slide" "$part"; fi; printf "file '%s'\n" "$part" >> "$work/concat.txt"; done; echo "$cinematic_ok"; }
 wrap_text_file(){ local source="$1" target="$2"; python3 - "$source" "$target" <<'PY2'
 import pathlib,re,sys,textwrap
@@ -110,7 +120,7 @@ render_v3_native(){
   reel_design_values || exit 1
   mapfile -t static_slides < <(jq -r '.fallback.static_slides[]? // empty' "$request")
   if [[ "$allow_static_slides" == "true" && ${#static_slides[@]} -ne 5 ]]; then echo "Invalid v3 Reel request: static fallback requires exactly five static_slides." >&2; exit 1; fi
-  local total=$((duration*5)); if ! normalize_cinematic "$total"; then [[ "$allow_static_slides" == "true" ]] || { echo "Cinematic clip unavailable and static fallback is disabled." >&2; exit 1; }; render_all_static static_slides; echo 0; return; fi
+  local total=$((duration*5)); if ! normalize_cinematic "$total"; then echo "Native cinematic Reel could not load its cinematic background; logo acceptance cannot be verified." >&2; return 1; fi
 
   local font_family font_match font_serif font_serif_bold font_serif_italic
   font_family="$(jq -r '.overlay.brand.font_family // "Georgia"' "$request")"
@@ -126,8 +136,8 @@ render_v3_native(){
   logo_light_url="$(jq -r '.overlay.brand.logo_light_url // empty' "$request")"
   logo_dark_url="$(jq -r '.overlay.brand.logo_dark_url // empty' "$request")"
   [[ -n "$logo_light_url" && -n "$logo_dark_url" ]] || { echo "Approved Reel logo URLs are missing." >&2; return 1; }
-  curl -fsSL --retry 3 --retry-delay 2 "$logo_light_url" -o "$work/logo_light" || { echo "Approved light Reel logo could not be loaded." >&2; return 1; }
-  curl -fsSL --retry 3 --retry-delay 2 "$logo_dark_url" -o "$work/logo_dark" || { echo "Approved dark Reel logo could not be loaded." >&2; return 1; }
+  normalize_logo_asset "$logo_light_url" "$work/logo_light_raw" "$work/logo_light.png" "light" || return 1
+  normalize_logo_asset "$logo_dark_url" "$work/logo_dark_raw" "$work/logo_dark.png" "dark" || return 1
   printf '%s' "$brand_tagline" > "$work/tagline.txt"
 
   : > "$work/native_concat.txt"; local native_ok=1
@@ -154,16 +164,16 @@ render_v3_native(){
     if [[ "$closing" == true && "$design_family" != FRAMED_THOUGHT ]]; then filters+=",drawbox=x=$((tx+tw*34/100)):y=$((ty+th+35)):w=$((tw*32/100)):h=3:color=$(family_accent)@0.95:t=fill"; fi
     filters+=",drawtext=fontfile='$font_serif_italic':textfile='$work/tagline.txt':fontcolor=$c_white@0.96:fontsize=34:x=(w-text_w)/2:y=1817"
 
-    logotone="$(logo_tone)"; logofile="$work/logo_dark"; [[ "$logotone" == LIGHT ]] && logofile="$work/logo_light"
+    logotone="$(logo_tone)"; logofile="$work/logo_dark.png"; [[ "$logotone" == LIGHT ]] && logofile="$work/logo_light.png"
     if [[ "$i" -eq 0 ]]; then logow=243; elif [[ "$i" -eq 4 ]]; then logow=232; else logow=200; fi
     logox=$(((1080-logow)/2)); logoy=42
     if [[ "$design_position" != CENTER && "$design_family" =~ ^(LEFT_STORY|ACCENT_BAND|REVEAL_FOCUS)$ ]]; then
       if [[ "$design_position" == RIGHT ]]; then logox=$((1080-logow-81)); else logox=81; fi
     fi
-    if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$logofile" -t "$duration" -filter_complex "[0:v]$filters[base];[1:v]scale=$logow:-1[logo];[base][logo]overlay=$logox:$logoy:format=auto,format=yuv420p[outv]" -map '[outv]' -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi
+    if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$logofile" -t "$duration" -filter_complex "[0:v]$filters[base];[1:v]scale=$logow:-1:flags=lanczos,format=rgba[logo];[base][logo]overlay=$logox:$logoy:format=auto,format=yuv420p[outv]" -map '[outv]' -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi
     printf "file '%s'\n" "$part" >> "$work/native_concat.txt"
   done
-  if [[ "$native_ok" -eq 1 ]]; then mv "$work/native_concat.txt" "$work/concat.txt"; echo 1; return; fi
+  if [[ "$native_ok" -eq 1 ]]; then mv "$work/native_concat.txt" "$work/concat.txt"; return 0; fi
   echo "Native cinematic design did not meet the exact brand rendering contract; Reel was not marked ready." >&2
   return 1
 }
@@ -171,11 +181,25 @@ ambient_frequencies(){ case "$music_mood" in RENEWAL|HOPE|OPENNESS) echo '196 24
 render_soft_music(){ local total="$1" fade; fade=$((total>2?total-2:0)); read -r f1 f2 f3 <<< "$(ambient_frequencies)"; ffmpeg -y -loglevel error -f lavfi -i "sine=frequency=$f1:sample_rate=44100:duration=$total" -f lavfi -i "sine=frequency=$f2:sample_rate=44100:duration=$total" -f lavfi -i "sine=frequency=$f3:sample_rate=44100:duration=$total" -filter_complex "[0:a]volume=0.18[a0];[1:a]volume=0.15[a1];[2:a]volume=0.12[a2];[a0][a1][a2]amix=inputs=3:normalize=0,highpass=f=90,lowpass=f=1200,afade=t=in:st=0:d=1.5,afade=t=out:st=$fade:d=2[a]" -map '[a]' -c:a aac -b:a 96k "$work/soft-music.m4a"; }
 
 cinematic_ok=0
-case "$schema" in isy-reel-request-v3) cinematic_ok="$(render_v3_native)";; isy-reel-request-v1|isy-reel-request-v2) cinematic_ok="$(render_legacy)";; *) echo "Unsupported Reel request schema: $schema" >&2; exit 1;; esac
+logo_rendered=false
+logo_asset_used=""
+if [[ "$schema" == "isy-reel-request-v3" ]]; then
+  design_family="$(jq -r '.overlay.design.family // "QUIET_CENTER"' "$request" | tr '[:lower:]' '[:upper:]')"
+  design_position="$(jq -r '.overlay.design.position // "CENTER"' "$request" | tr '[:lower:]' '[:upper:]')"
+  render_v3_native
+  cinematic_ok=1
+  logo_asset_used="$(logo_tone)"
+  logo_rendered=true
+else
+  case "$schema" in isy-reel-request-v1|isy-reel-request-v2) cinematic_ok="$(render_legacy)";; *) echo "Unsupported Reel request schema: $schema" >&2; exit 1;; esac
+fi
 ffmpeg -y -loglevel error -f concat -safe 0 -i "$work/concat.txt" -c copy -movflags +faststart "$work/video-only.mp4"
 audio_added=false
 if [[ "$schema" == "isy-reel-request-v3" && "$music_mode" == "SOFT" ]]; then [[ "$music_source" == "BUILT_IN_AMBIENT_V1" ]] || { echo "Unsupported v3 music source: $music_source" >&2; exit 1; }; total_seconds=$((duration*5)); render_soft_music "$total_seconds"; ffmpeg -y -loglevel error -i "$work/video-only.mp4" -i "$work/soft-music.m4a" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 96k -shortest -movflags +faststart "$out"; audio_added=true; else mv "$work/video-only.mp4" "$out"; fi
 resolution="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$out")"; [[ "$resolution" == "1080x1920" ]] || { echo "Unexpected Reel resolution: $resolution" >&2; exit 1; }
 if [[ "$schema" == "isy-reel-request-v3" && "$music_mode" == "SOFT" ]]; then audio_codec="$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of csv=p=0 "$out")"; [[ "$audio_codec" == "aac" ]] || { echo "Required AAC soft-music track is missing." >&2; exit 1; }; fi
-if [[ "$schema" == "isy-reel-request-v3" ]]; then jq -n --arg status READY --arg render_id "$render_id" --arg schema "$schema" --argjson audio "$audio_added" --arg music_source "$music_source" --arg design_family "${design_family:-}" --arg design_position "${design_position:-}" --arg layout "$(jq -r '.overlay.layout // ""' "$request")" --arg rendered_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{status:$status,render_id:$render_id,schema:$schema,audio:$audio,music_source:$music_source,design_family:$design_family,design_position:$design_position,layout:$layout,rendered_at:$rendered_at}' > "$status_out"; fi
+if [[ "$schema" == "isy-reel-request-v3" ]]; then
+  [[ "$logo_rendered" == "true" ]] || { echo "Reel logo overlay was not verified; refusing READY status." >&2; exit 1; }
+  jq -n --arg status READY --arg render_id "$render_id" --arg schema "$schema" --argjson audio "$audio_added" --arg music_source "$music_source" --arg design_family "$design_family" --arg design_position "$design_position" --arg layout "$(jq -r '.overlay.layout // ""' "$request")" --arg logo_asset_used "$logo_asset_used" --argjson logo_rendered true --arg rendered_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{status:$status,render_id:$render_id,schema:$schema,audio:$audio,music_source:$music_source,design_family:$design_family,design_position:$design_position,layout:$layout,logo_asset_used:$logo_asset_used,logo_rendered:$logo_rendered,rendered_at:$rendered_at}' > "$status_out"
+fi
 printf 'Rendered %s (%s) schema=%s render_id=%s cinematic=%s audio=%s\n' "$out" "$resolution" "$schema" "$render_id" "$cinematic_ok" "$audio_added"
