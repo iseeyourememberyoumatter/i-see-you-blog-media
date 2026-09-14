@@ -1,0 +1,47 @@
+name: Render I See You Cinematic Story
+on:
+  push:
+    paths:
+      - 'story-requests/**/*.json'
+permissions:
+  contents: write
+concurrency:
+  group: story-render-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  render-story:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install renderer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg jq fonts-dejavu-core
+      - name: Find latest changed Story request
+        id: request
+        shell: bash
+        run: |
+          set -euo pipefail
+          request="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^story-requests/.*\.json$' | tail -n 1 || true)"
+          if [ -z "$request" ]; then
+            echo "No Story request found in triggering commit."
+            exit 1
+          fi
+          echo "path=$request" >> "$GITHUB_OUTPUT"
+      - name: Render five Story frames
+        run: bash github-story-renderer/render-story.sh '${{ steps.request.outputs.path }}'
+      - name: Commit rendered Story media
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'I See You Story Renderer'
+          git config user.email 'actions@users.noreply.github.com'
+          git add stories/
+          if git diff --cached --quiet; then
+            echo 'No Story output changes.'
+            exit 0
+          fi
+          git commit -m "Render cinematic Story for ${{ steps.request.outputs.path }}"
+          git push
