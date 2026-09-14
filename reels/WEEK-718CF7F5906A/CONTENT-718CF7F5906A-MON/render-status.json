@@ -1,11 +1,13 @@
 {
   "status": "READY",
-  "render_id": "RENDER-39e3a0aa-d335-4111-84ad-5f859909ea54",
+  "render_id": "RENDER-7133c690-3ba0-41b7-b06c-715a428a1fe1",
   "schema": "isy-reel-request-v3",
   "audio": true,
   "music_source": "BUILT_IN_AMBIENT_V1",
-  "design_family": "",
-  "design_position": "",
+  "design_family": "QUIET_CENTER",
+  "design_position": "RIGHT",
   "layout": "NATIVE_STORY_DESIGN_V3",
-  "rendered_at": "2026-09-14T04:15:12Z"
+  "logo_asset_used": "LIGHT",
+  "logo_rendered": true,
+  "rendered_at": "2026-09-14T13:29:21Z"
 }
