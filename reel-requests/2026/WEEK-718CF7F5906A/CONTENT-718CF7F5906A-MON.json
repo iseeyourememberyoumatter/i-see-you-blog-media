@@ -1,6 +1,6 @@
 {
   "schema": "isy-reel-request-v3",
-  "render_id": "RENDER-3829f4f4-ce79-429e-a117-70847442db5c",
+  "render_id": "RENDER-f48250b8-fe28-4c18-961b-6bca4a9ac2c9",
   "week_id": "WEEK-718CF7F5906A",
   "content_id": "CONTENT-718CF7F5906A-MON",
   "seconds_per_slide": 3,
@@ -107,11 +107,11 @@
   "fallback": {
     "allow_static_slides": true,
     "static_slides": [
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/e667f78c9657b33f5f68059ce5a5535062349537/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-1.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/f36a5a0dbe16955d3667916c58fe888dea7c4659/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-2.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/fc5c49f8f3ff63b099e1fb0257aeeb8bab592aaf/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-3.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/fb6547b98596d1014073b6bbd7ef401a9c4bcfd6/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-4.png",
-      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6ed12857eaef5de962def0f2f5a65a58b1755d6a/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-5.png"
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/fac221daeb830043addf42f97af3422d2b2c371e/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/77cfb2376cc2a09f85b5b878f194f8430144b7d5/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/37d8cfa3f7161cbe30ae81be3c994453f5465d4c/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/65324c6a4acd4c2c6819cc68192339ddbb1c644c/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c3b5567e27b94cb816537d48da07c555de8401ac/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-MON/slide-5.png"
     ]
   }
 }
