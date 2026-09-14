@@ -35,6 +35,9 @@ esac
 footer="$accent"
 light_logo_url="$(jq -r '.overlay.brand.logo_light_url // empty' "$request")"
 dark_logo_url="$(jq -r '.overlay.brand.logo_dark_url // empty' "$request")"
+tagline="$(jq -r '.overlay.brand.tagline // empty' "$request")"
+[[ -n "$tagline" ]] || { echo "I See You Story tagline is required." >&2; exit 1; }
+printf '%s\n' "$tagline" > "$work/tagline.txt"
 [[ -n "$light_logo_url" && -n "$dark_logo_url" ]] || { echo "Approved I See You light and dark logos are required." >&2; exit 1; }
 curl -fsSL --retry 3 "$light_logo_url" -o "$work/logo-light"
 curl -fsSL --retry 3 "$dark_logo_url" -o "$work/logo-dark"
@@ -82,7 +85,7 @@ for i in 1 2 3 4 5; do
   esac
   [[ "$position" == "RIGHT" && "$family" == "LEFT_STORY" ]] && { panel="drawbox=x=320:y=0:w=760:h=1750:color=0xF7F1E7@0.68:t=fill,drawbox=x=1015:y=430:w=7:h=820:color=$accent@0.95:t=fill"; tx=360; }
   frame="$work/frame-$i-silent.mp4"
-  ffmpeg -y -loglevel error -i "$base" -i "$logo" -filter_complex "[0:v]$panel,drawbox=x=0:y=1740:w=1080:h=78:color=$footer@0.96:t=fill,drawtext=fontfile=$font_bold:textfile='$wrapped':fontcolor=$text_color:fontsize=52:line_spacing=17:x=$tx:y=$ty:box=0[v0];[1:v]scale=220:-1[lg];[v0][lg]overlay=70:290,format=yuv420p[v]" -map '[v]' -t "$duration" -r 30 -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$frame"
+  ffmpeg -y -loglevel error -i "$base" -i "$logo" -filter_complex "[0:v]$panel,drawbox=x=0:y=1532:w=1080:h=78:color=$footer@0.96:t=fill,drawtext=fontfile=$font:textfile='$work/tagline.txt':fontcolor=white:fontsize=34:x=(w-text_w)/2:y=1553,drawtext=fontfile=$font_bold:textfile='$wrapped':fontcolor=$text_color:fontsize=52:line_spacing=17:x=$tx:y=$ty:box=0[v0];[1:v]scale=220:-1[lg];[v0][lg]overlay=70:290,format=yuv420p[v]" -map '[v]' -t "$duration" -r 30 -c:v libx264 -preset veryfast -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$frame"
   out="$out_dir/frame-$i.mp4"
   if [[ "$music_mode" == "SOFT" ]]; then
     freq="$(mood_freq)"
