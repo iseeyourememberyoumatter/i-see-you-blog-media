@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-af80af47-9194-4c61-b1f9-cba1377769fd",
+  "week_id": "WEEK-718CF7F5906A",
+  "content_id": "CONTENT-718CF7F5906A-TUE",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-001",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "FRAMED_THOUGHT",
+      "position": "LEFT",
+      "variant_key": "BG-000035::LEFT",
+      "asset_id": "BG-000035",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sitting with a spreadsheet at thirty-five, watching numbers that refuse to balance, a memory from twenty years ago suddenly settles into place.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 2,
+        "text": "You remember your father standing by the window on a Tuesday afternoon, staring into the yard for hours without speaking.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 3,
+        "text": "At ten, that silence felt cold and immense, like a door pulled shut against the rest of the house.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 4,
+        "text": "At thirty-five, holding your quiet panic, you recognize someone trying hard not to let their hands shake before their kids.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 5,
+        "text": "Silence in a home does not always mean emotional distance. Sometimes it is the heavy, invisible labor of keeping fear outside the threshold.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/61d30fee1538e69ae92b6d63a929f323301506d2/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/ad72fe07dacb89da7fd8290308e8efe768977c54/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/ffe443e592f624f53df03f6e8e4e256c2f2e352a/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3864ee98273d45fc2043c83efb4c3aca4bb2a2bb/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/8bd61fbda902e5339b4c449a78d0c452d478cdd8/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-TUE/slide-5.png"
+    ]
+  }
+}
