@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-b1548615-8bb8-4724-9011-c3ef5208900a",
+  "week_id": "WEEK-718CF7F5906A",
+  "content_id": "CONTENT-718CF7F5906A-THU",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-002",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000035::RIGHT",
+      "asset_id": "BG-000035",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "At thirty-four, you sit in your quiet apartment, enjoying coffee before a day that belongs entirely to you.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 2,
+        "text": "At your age, your grandmother raised four children in a four-room house, her days measured by laundry and meals.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 3,
+        "text": "You remember her sharp tone when the screen door slammed, a sharpness you once attributed to a strict temperament.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 4,
+        "text": "In your empty morning, you realize her sharpness wasn't a defect, but fatigue from never having an hour to herself.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 5,
+        "text": "Vast shifts in generational opportunity can easily hide the quiet, constant sacrifice of those whose circumstances never offered room to rest.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a1ff9f7f5196f14e969ddc6473326a75e35e7ef5/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6299832e55cb044d6dec994b82622cd2cde262cd/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/df766f0bf8faebef5d83cb69c32520f0fe0aa5ce/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b4b6fa8415eb18cd2918740e7658e645c3634c95/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/97788914bf005b44df8d0e073b42a5760fe45464/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-THU/slide-5.png"
+    ]
+  }
+}
