@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-42be108b-712f-4372-ad6b-80460a88dc44",
+  "week_id": "WEEK-718CF7F5906A",
+  "content_id": "CONTENT-718CF7F5906A-SUN",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-REFLECTION-001",
+    "category": "REFLECTION",
+    "subtype": "REFLECTION",
+    "mood": "STILLNESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-REFLECTION-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "CLOSING_GLOW",
+      "position": "RIGHT",
+      "variant_key": "BG-000035::RIGHT",
+      "asset_id": "BG-000035",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "As the years add up, we quietly reach the exact ages where our earliest memories of our parents and elders took root.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
+      },
+      {
+        "index": 2,
+        "text": "The pedestal of childhood omniscience falls away, replaced by the startling realization that they were simply adults improvising under weight.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
+      },
+      {
+        "index": 3,
+        "text": "The silences, stern rules, and sudden moves were rarely who they were, but how they coped.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
+      },
+      {
+        "index": 4,
+        "text": "Standing on the same terrain of adulthood, our old grievances soften into an understanding of shared human limitations.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
+      },
+      {
+        "index": 5,
+        "text": "Time gradually transforms inherited judgment into a quiet, equal recognition of what it costs everyone to navigate a life.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "STILLNESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/88ae94a3c9ac76c7e0834479e0e59a0ce426abb4/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/83b9d44fbb5aa334549c04fda47b200199c955f6/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/87394d8fd5fef3c212fe48617019fe29edf5a7b3/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4bd944e2b428bacc919d7c7c611b8929795133eb/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/43aa333f34846b368111adbd700a5fbf51988906/social/2026/WEEK-718CF7F5906A/CONTENT-718CF7F5906A-SUN/slide-5.png"
+    ]
+  }
+}
