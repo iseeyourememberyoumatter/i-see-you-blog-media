@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-1f38d45c-a798-4276-b175-1fb5bb5325c6",
+  "week_id": "WEEK-74BD767DC4D7",
+  "content_id": "CONTENT-74BD767DC4D7-MON",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-WATER-001",
+    "category": "WATER",
+    "subtype": "GENTLE_WATER",
+    "mood": "STILLNESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-WATER-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "QUIET_CENTER",
+      "position": "RIGHT",
+      "variant_key": "BG-000068::RIGHT",
+      "asset_id": "BG-000068",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You stand in the tea aisle, holding two boxes?one chamomile, one peppermint.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "You automatically remember which one soothes your mother's evening cough, but you freeze trying to recall your own preference.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "It feels small, almost silly, until the silence in your head stays blank.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "Selfhood doesn't usually vanish overnight; it fades through hundreds of quiet choices where your taste steps aside.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "Today, if you can, notice one small choice that belongs entirely to your own taste.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "STILLNESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/316502bebd237b3d29f4cbb243708b870935662c/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-MON/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3714412ab421620592ba752ec6613a83d1cb0eef/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-MON/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3e21590f7e59378d18b4b2d302bdacf70ac06702/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-MON/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/516506b2f1633c207ae6c18714a21b8fefec05d2/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-MON/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/2c6b7c9f0854d51fa4d6a6b6d8521c25b15c7f71/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-MON/slide-5.png"
+    ]
+  }
+}
