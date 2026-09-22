@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-4d896382-3f9f-41ea-a4b0-7ef604ee5f1b",
+  "week_id": "WEEK-74BD767DC4D7",
+  "content_id": "CONTENT-74BD767DC4D7-TUE",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-SNOWLIGHT-001",
+    "category": "SNOW_LIGHT",
+    "subtype": "SNOW_LIGHT",
+    "mood": "STILLNESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-SNOWLIGHT-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "NATURAL_REPEAT"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000068::LEFT",
+      "asset_id": "BG-000068",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "The engine is off, but you stay sitting in the driveway with your hands resting on the steering wheel.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "You just spent three hours steering an adult sibling through another unraveling crisis.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "Stepping inside means returning to yourself, but right now, that space feels strangely empty.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "When being needed becomes your main anchor, quiet time doesn't feel like rest?it feels like stepping into the unknown.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "This ten-minute pause in the driveway doesn't need to be productive. It is allowed to be just for breathing.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "STILLNESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/74e9af12059ba0d3d15bfe6e4e9443730a24bfef/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/01629fdf40ae5d4ae9d3f270a01997e07c4bd3b5/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d800f9ecec5288043b87f136446974fecb0dc54c/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/8da5eb76714fc15cc26e1e1a282231a7764ce14b/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a1ea67515013e9fe49a28213bdab315f69a28a21/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-TUE/slide-5.png"
+    ]
+  }
+}
