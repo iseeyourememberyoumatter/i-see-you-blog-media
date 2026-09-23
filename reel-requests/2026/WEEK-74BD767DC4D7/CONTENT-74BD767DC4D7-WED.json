@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-d53ccd70-a42a-481f-ab1f-ac2f3777e7fc",
+  "week_id": "WEEK-74BD767DC4D7",
+  "content_id": "CONTENT-74BD767DC4D7-WED",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-003",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-003.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "FRAMED_THOUGHT",
+      "position": "CENTER",
+      "variant_key": "BG-000068::CENTER",
+      "asset_id": "BG-000068",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Your desk is neatly arranged with color-coded tabs for your partner's lab results and doctor visits.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 2,
+        "text": "Meanwhile, your own dental check-up reminder has been sitting unread on the fridge for eight months.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 3,
+        "text": "You are masterfully capable of organizing their care, yet your own health remains indefinitely postponed.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 4,
+        "text": "Hyper-focusing on another person's well-being can become a quiet hideout from your own exhaustion.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      },
+      {
+        "index": 5,
+        "text": "Caring deeply for someone else has never required erasing your own name from the calendar.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b090dd05799149b993c328e28d5ae94a21ccf2fd/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-WED/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1891a5596919ecabf7f93f447d674865f4e61d0b/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-WED/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0dd6212ddf67c456982567128ce2dbdb72164637/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-WED/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/21f60862326fbc4093e4a614a9356a80155f454b/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-WED/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1ed05df4563940c3b70da0901871c95f9506ec3a/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-WED/slide-5.png"
+    ]
+  }
+}
