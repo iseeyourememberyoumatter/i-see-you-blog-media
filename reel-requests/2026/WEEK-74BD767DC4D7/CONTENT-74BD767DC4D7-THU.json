@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-638b4efa-37b2-4dbf-8817-9c0c1cce62bf",
+  "week_id": "WEEK-74BD767DC4D7",
+  "content_id": "CONTENT-74BD767DC4D7-THU",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-001",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000068::RIGHT",
+      "asset_id": "BG-000068",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "It's late at night, and you are quietly finishing slides that were assigned to a struggling colleague.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 2,
+        "text": "You tell yourself you're protecting them from management, but your own evening is slipping away again.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 3,
+        "text": "You are caught between fearing everything will break and knowing you are breaking yourself to hold it up.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 4,
+        "text": "Shielding others from the consequences of their role often prevents them from growing while draining your reserves.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 5,
+        "text": "Recognizing where your work ends and theirs begins isn't a failure of support; it's clarity.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/550f4fd35d33f13a8da451db48e4b9270c468d9f/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/41db9b06e3608f3db2cca6a01335f6e32d41d439/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/8c1cc2c8c20d2569beec92c7c236add4de18f2b9/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/024187d5caa4dd20ca13d5dc9a8b1961d5312535/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d9b1457953e0bf1df64264646b4eadbe0944d9de/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-THU/slide-5.png"
+    ]
+  }
+}
