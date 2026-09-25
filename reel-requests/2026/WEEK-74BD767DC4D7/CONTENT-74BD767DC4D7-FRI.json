@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-78ae5d56-4e0c-44fa-af10-bebb1228b52b",
+  "week_id": "WEEK-74BD767DC4D7",
+  "content_id": "CONTENT-74BD767DC4D7-FRI",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-WATER-002",
+    "category": "WATER",
+    "subtype": "GENTLE_WATER",
+    "mood": "STILLNESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-WATER-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "REVEAL_FOCUS",
+      "position": "LEFT",
+      "variant_key": "BG-000068::LEFT",
+      "asset_id": "BG-000068",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You get invited out for dinner, open your closet, and look at your clothes with fresh eyes.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "Soft fabrics, dark colors, easy-wash cotton?every piece was chosen to survive long shifts of caregiving.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "There isn't a single shirt in the wardrobe bought simply because you loved how it looked.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "The shift from being a whole person to acting as an emergency response leaves quiet markers in ordinary spaces.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "Choosing even one small thing purely for your own comfort is a gentle step back into yourself.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "STILLNESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/658f64acee545a4031fa70198c7edc0d9186be56/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-FRI/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/180d908961bef73be075c11ee1566fc85dafa6cb/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-FRI/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/01aa57543695ec2b2ab3d410060b52e43146c574/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-FRI/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/131f1cfedae5867ec54f4fd9262e365a62170394/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-FRI/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/bcf2f05d68a7e64a3e0abd0398b06752eddb2f28/social/2026/WEEK-74BD767DC4D7/CONTENT-74BD767DC4D7-FRI/slide-5.png"
+    ]
+  }
+}
