@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-2421e16b-fcfc-478e-a1e8-610ca4a7935e",
+  "week_id": "WEEK-0D409A841A93",
+  "content_id": "CONTENT-0D409A841A93-MON",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-001",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "QUIET_CENTER",
+      "position": "RIGHT",
+      "variant_key": "BG-000039::RIGHT",
+      "asset_id": "BG-000039",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "The house is finally dark. Everyone else is asleep.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "You eat something standing up in the kitchen, chewing slowly on purpose.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "No one is asking a question across the table from you.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "For years, waiting for the next drop was how you stayed anchored.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "Now the quiet comes, and you wonder who you are without the friction.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "NAVY",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3ecce754edd6cff76105fa51be16136f377edd21/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-MON/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/8c2353faa276cf1dce4df2af52e4a9d97bf65a1d/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-MON/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d34022c5205adf7c2977b6b97856c8bbf139c1e2/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-MON/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0de340772c02b892f417cc38572694b40a606bf8/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-MON/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b4d21b2104d92182aa2b2f5e4e21be100a792a7f/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-MON/slide-5.png"
+    ]
+  }
+}
