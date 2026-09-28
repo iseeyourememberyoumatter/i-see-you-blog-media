@@ -53,8 +53,28 @@ jobs:
             echo "No new Reel output."
             exit 0
           fi
+
           git config user.name "I See You Reel Renderer"
           git config user.email "actions@users.noreply.github.com"
           git add reels
           git commit -m "Render approved I See You Reel"
-          git push
+
+          max_attempts=3
+          for attempt in $(seq 1 "$max_attempts"); do
+            echo "Push attempt $attempt of $max_attempts"
+
+            git fetch origin main
+            git rebase origin/main
+
+            if git push origin HEAD:main; then
+              echo "Rendered Reel committed successfully."
+              exit 0
+            fi
+
+            if [ "$attempt" -ge "$max_attempts" ]; then
+              echo "Rendered Reel push failed after $max_attempts attempts." >&2
+              exit 1
+            fi
+
+            sleep $((attempt * 5))
+          done
