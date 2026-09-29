@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-c07ad6c2-c976-4b30-a0e2-62ece9190425",
+  "week_id": "WEEK-0D409A841A93",
+  "content_id": "CONTENT-0D409A841A93-TUE",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-002",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000039::LEFT",
+      "asset_id": "BG-000039",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Finding an old photograph from a decade ago.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "Noticing the aggressive set of your jaw.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "Remembering how proud you once were of that toughness.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "The stubbornness worn as a badge of honor now feels heavy.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "You outgrew the armor that kept you safe.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/ae20c84538cb0480e3c4e3ea42939da3c20cecc0/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/23554432149b02dc4f3884d47164c7a5a86adcd4/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1e79b689ae72811c7045aba91e5ef1d4c7fcfb20/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/7938642de640ad08501f21c0e933e6156bc46fd4/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6c0f2f18c23f0e7a73fe830a7b80fc947bbc807f/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-TUE/slide-5.png"
+    ]
+  }
+}
