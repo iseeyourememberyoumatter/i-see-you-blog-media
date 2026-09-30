@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-c21481dc-c1f4-4fea-b78b-e8eb6d7a93a8",
+  "week_id": "WEEK-0D409A841A93",
+  "content_id": "CONTENT-0D409A841A93-WED",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-002",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "REVEAL_FOCUS",
+      "position": "CENTER",
+      "variant_key": "BG-000039::CENTER",
+      "asset_id": "BG-000039",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Drafting a calm email that totally favors them.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 2,
+        "text": "Your chest feels tight and constricted.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 3,
+        "text": "Giving them what they want to avoid the storm.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 4,
+        "text": "A quiet concession tastes remarkably like ash.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      },
+      {
+        "index": 5,
+        "text": "Yielding still collides with the reflex of defeat.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/1d0b89d02f17d3b8164ff14bdc078106f0135341/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-WED/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/ae2dbcd8d7a4adb5639a73c688a80a99a251c05d/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-WED/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/57b386d2707cb71614c813346687635c7604fcfa/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-WED/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0e315bec032d3a0f4e1e1d2f2e256c1744890a9c/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-WED/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9437c07e0b256ad3e6ffdfcebf01374f5152eac8/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-WED/slide-5.png"
+    ]
+  }
+}
