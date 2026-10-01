@@ -1,0 +1,117 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-a06ca35a-a1ad-4533-91f1-6e2f88a8761f",
+  "week_id": "WEEK-0D409A841A93",
+  "content_id": "CONTENT-0D409A841A93-THU",
+  "seconds_per_slide": 3,
+  "cinematic": {
+    "media_id": "ISY-CIN-WIND-001",
+    "category": "WIND",
+    "subtype": "NATURE_WIND",
+    "mood": "UNCERTAINTY",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-WIND-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "NATURAL_REPEAT"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V3",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000039::RIGHT",
+      "asset_id": "BG-000039",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Sitting in a silent home office.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 2,
+        "text": "Ignoring a rising tide of petty Slack notifications.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 3,
+        "text": "Refusing to rescue an anxious colleague today.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 4,
+        "text": "Choosing not to fix their chaos feels like walking away.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      },
+      {
+        "index": 5,
+        "text": "The guilt of letting someone else struggle.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE"
+      }
+    ]
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "UNCERTAINTY",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9f33760eb138eec8f4d0149996db83dac9f16c7f/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/0ebfb6d0d76d90f521154b9ebc13b181fe7b8b2c/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/259cbf6bbfa0db9e665eec4e085d2d1dd8be9460/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a163be751fa6f6df2f8142c9a25073eb196fda6a/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/e7b1fbe67202b36566f8401ec4a1664f63fdb075/social/2026/WEEK-0D409A841A93/CONTENT-0D409A841A93-THU/slide-5.png"
+    ]
+  }
+}
