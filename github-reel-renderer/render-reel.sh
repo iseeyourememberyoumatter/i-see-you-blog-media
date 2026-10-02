@@ -36,9 +36,26 @@ normalize_logo_asset(){
   awk -v a="$alpha_avg" 'BEGIN{exit !(a>1.0)}' || { echo "Approved $label Reel logo is effectively transparent (alpha_avg=$alpha_avg)." >&2; return 1; }
 }
 render_legacy(){ mapfile -t slides < <(jq -r '.slides[]?' "$request"); [[ ${#slides[@]} -eq 5 ]] || { echo "Invalid legacy Reel request: exactly five slides are required." >&2; exit 1; }; local cinematic_ok=0 total=$((duration*5)); if normalize_cinematic "$total"; then cinematic_ok=1; fi; : > "$work/concat.txt"; for i in "${!slides[@]}"; do local slide="$work/legacy_$i.png" part="$work/legacy_$i.mp4"; download_slide "${slides[$i]}" "$slide"; if [[ "$cinematic_ok" -eq 1 ]]; then local offset=$((i*duration)); if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$slide" -t "$duration" -filter_complex "[0:v]drawbox=x=70:y=377:w=940:h=1166:color=black@0.18:t=fill[bg];[1:v]scale=900:1125:force_original_aspect_ratio=decrease[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2,format=yuv420p" -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then cinematic_ok=0; render_static_part "$slide" "$part"; fi; else [[ "$allow_static_slides" == "true" ]] || { echo "Cinematic clip unavailable and static fallback is disabled." >&2; exit 1; }; render_static_part "$slide" "$part"; fi; printf "file '%s'\n" "$part" >> "$work/concat.txt"; done; echo "$cinematic_ok"; }
-wrap_text_file(){ local source="$1" target="$2"; python3 - "$source" "$target" <<'PY2'
-import pathlib,re,sys,textwrap
-src,dst=map(pathlib.Path,sys.argv[1:3]); text=re.sub(r"\s+"," ",src.read_text(encoding="utf-8")).strip(); width=29 if len(text)<=115 else 25; dst.write_text(textwrap.fill(text,width=width,break_long_words=False,break_on_hyphens=False),encoding="utf-8")
+fit_text_file(){ local source="$1" target="$2" box_w="$3" box_h="$4" min_font="$5" max_font="$6" max_lines="$7"; python3 - "$source" "$target" "$box_w" "$box_h" "$min_font" "$max_font" "$max_lines" <<'PY2'
+import pathlib,re,sys,textwrap,math
+src,dst=map(pathlib.Path,sys.argv[1:3])
+box_w=float(sys.argv[3]); box_h=float(sys.argv[4]); min_font=int(float(sys.argv[5])); max_font=int(float(sys.argv[6])); max_lines=int(float(sys.argv[7]))
+text=re.sub(r"\s+"," ",src.read_text(encoding="utf-8")).strip()
+def wrap_for(font):
+    chars=max(8,int(box_w/(font*0.56)))
+    lines=textwrap.wrap(text,width=chars,break_long_words=False,break_on_hyphens=False)
+    line_h=font*1.18+16
+    ok=len(lines)<=max_lines and len(lines)*line_h<=box_h
+    return ok,lines
+for font in range(max_font,min_font-1,-2):
+    ok,lines=wrap_for(font)
+    if ok:
+        dst.write_text("\n".join(lines),encoding="utf-8")
+        print(font)
+        raise SystemExit(0)
+ok,lines=wrap_for(min_font)
+dst.write_text("\n".join(lines),encoding="utf-8")
+raise SystemExit("Text does not fit protected Reel text box at minimum readable font size")
 PY2
 }
 color_arg(){ local v="${1#\#}"; printf '0x%s' "$v"; }
@@ -120,7 +137,7 @@ render_v3_native(){
   reel_design_values || exit 1
   mapfile -t static_slides < <(jq -r '.fallback.static_slides[]? // empty' "$request")
   if [[ "$allow_static_slides" == "true" && ${#static_slides[@]} -ne 5 ]]; then echo "Invalid v3 Reel request: static fallback requires exactly five static_slides." >&2; exit 1; fi
-  local total=$((duration*5)); if ! normalize_cinematic "$total"; then echo "Native cinematic Reel could not load its cinematic background; logo acceptance cannot be verified." >&2; return 1; fi
+  local total; total="$(jq -r 'if ((.frame_durations // [])|length)==5 then ([.frame_durations[]|tonumber]|add) else ((.seconds_per_slide // 3)*5) end' "$request")"; if ! normalize_cinematic "$total"; then echo "Native cinematic Reel could not load its cinematic background; logo acceptance cannot be verified." >&2; return 1; fi
 
   local font_family font_match font_serif font_serif_bold font_serif_italic
   font_family="$(jq -r '.overlay.brand.font_family // "Georgia"' "$request")"
@@ -140,24 +157,20 @@ render_v3_native(){
   normalize_logo_asset "$logo_dark_url" "$work/logo_dark_raw" "$work/logo_dark.png" "dark" || return 1
   printf '%s' "$brand_tagline" > "$work/tagline.txt"
 
-  : > "$work/native_concat.txt"; local native_ok=1
+  : > "$work/native_concat.txt"; local native_ok=1 offset=0
   for i in 0 1 2 3 4; do
     local raw="$work/raw_$i.txt" text="$work/text_$i.txt" part="$work/native_$i.mp4" closing=false; [[ "$i" -eq 4 ]] && closing=true
     jq -r ".overlay.slides[$i].text // empty" "$request" > "$raw"; [[ -s "$raw" ]] || { native_ok=0; break; }
-    wrap_text_file "$raw" "$text"; text_geometry "$i"
-    local chars words fontsize offset tone textcolor textx texty filters textfont logotone logofile logow logox logoy
-    chars="$(wc -m < "$raw" | tr -d ' ')"; words="$(wc -w < "$raw" | tr -d ' ')"
-    if [[ "$i" -eq 0 || "$i" -eq 4 ]]; then fontsize=60; else fontsize=58; fi
-    (( words>8 || chars>74 )) && fontsize=$((fontsize-2))
-    (( words>11 || chars>96 )) && fontsize=$((fontsize-2))
-    (( words>14 || chars>118 )) && fontsize=$((fontsize-2))
-    (( words>17 || chars>140 )) && fontsize=$((fontsize-2))
-    (( words>20 || chars>164 )) && fontsize=$((fontsize-2))
-    (( words>24 || chars>190 )) && fontsize=$((fontsize-2))
-    [[ "$design_family" == FRAMED_THOUGHT && "$fontsize" -gt 56 ]] && fontsize=56
-    [[ "$fontsize" -lt 44 ]] && fontsize=44
+    text_geometry "$i"
+    local frame_duration fit_x fit_y fit_w fit_h min_font max_font max_lines fontsize tone textcolor textx texty filters textfont logotone logofile logow logox logoy
+    frame_duration="$(jq -r ".frame_durations[$i] // .overlay.slides[$i].duration_seconds // .seconds_per_slide // 3" "$request")"
+    [[ "$frame_duration" =~ ^[0-9]+$ ]] && [[ "$frame_duration" -ge 2 ]] && [[ "$frame_duration" -le 10 ]] || { echo "Invalid Reel frame duration at slide $((i+1)): $frame_duration" >&2; native_ok=0; break; }
+    fit_x="$(jq -r ".overlay.slides[$i].fit.box.x // empty" "$request")"; fit_y="$(jq -r ".overlay.slides[$i].fit.box.y // empty" "$request")"; fit_w="$(jq -r ".overlay.slides[$i].fit.box.w // empty" "$request")"; fit_h="$(jq -r ".overlay.slides[$i].fit.box.h // empty" "$request")"
+    if [[ "$fit_x" =~ ^[0-9]+$ && "$fit_y" =~ ^[0-9]+$ && "$fit_w" =~ ^[0-9]+$ && "$fit_h" =~ ^[0-9]+$ ]]; then tx="$fit_x"; ty="$fit_y"; tw="$fit_w"; th="$fit_h"; fi
+    min_font="$(jq -r ".overlay.slides[$i].fit.min_font_px // .overlay.text_fit.min_font_px // 44" "$request")"; max_font="$(jq -r ".overlay.slides[$i].fit.max_font_px // .overlay.text_fit.max_font_px // 60" "$request")"; max_lines="$(jq -r ".overlay.slides[$i].fit.max_lines // .overlay.text_fit.max_lines // 8" "$request")"
+    fontsize="$(fit_text_file "$raw" "$text" "$tw" "$th" "$min_font" "$max_font" "$max_lines")" || { native_ok=0; break; }
     textfont="$font_serif"; [[ "$i" -eq 0 || "$i" -eq 4 ]] && textfont="$font_serif_bold"
-    offset=$((i*duration)); tone="$(text_tone)"; textcolor="$c_white"; [[ "$tone" == DARK ]] && textcolor="$c_dark"
+    tone="$(text_tone)"; textcolor="$c_white"; [[ "$tone" == DARK ]] && textcolor="$c_dark"
     textx="$tx"; [[ "$align" == center ]] && textx='(w-text_w)/2'; texty="$((ty+th/2))-(text_h/2)"
     filters="$(family_filter)"
     filters+=",drawtext=fontfile='$textfont':textfile='$work/text_$i.txt':fontcolor=$textcolor:fontsize=$fontsize:line_spacing=16:x=$textx:y=$texty:shadowcolor=$c_char@0.68:shadowx=2:shadowy=2"
@@ -170,8 +183,9 @@ render_v3_native(){
     if [[ "$design_position" != CENTER && "$design_family" =~ ^(LEFT_STORY|ACCENT_BAND|REVEAL_FOCUS)$ ]]; then
       if [[ "$design_position" == RIGHT ]]; then logox=$((1080-logow-81)); else logox=81; fi
     fi
-    if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$logofile" -t "$duration" -filter_complex "[0:v]$filters[base];[1:v]scale=$logow:-1:flags=lanczos,format=rgba[logo];[base][logo]overlay=$logox:$logoy:format=auto,format=yuv420p[outv]" -map '[outv]' -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi
+    if ! ffmpeg -y -loglevel error -ss "$offset" -i "$work/cinematic_bg.mp4" -loop 1 -i "$logofile" -t "$frame_duration" -filter_complex "[0:v]$filters[base];[1:v]scale=$logow:-1:flags=lanczos,format=rgba[logo];[base][logo]overlay=$logox:$logoy:format=auto,format=yuv420p[outv]" -map '[outv]' -r 30 -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -movflags +faststart -an "$part"; then native_ok=0; break; fi
     printf "file '%s'\n" "$part" >> "$work/native_concat.txt"
+    offset=$((offset+frame_duration))
   done
   if [[ "$native_ok" -eq 1 ]]; then mv "$work/native_concat.txt" "$work/concat.txt"; return 0; fi
   echo "Native cinematic design did not meet the exact brand rendering contract; Reel was not marked ready." >&2
@@ -195,11 +209,12 @@ else
 fi
 ffmpeg -y -loglevel error -f concat -safe 0 -i "$work/concat.txt" -c copy -movflags +faststart "$work/video-only.mp4"
 audio_added=false
-if [[ "$schema" == "isy-reel-request-v3" && "$music_mode" == "SOFT" ]]; then [[ "$music_source" == "BUILT_IN_AMBIENT_V1" ]] || { echo "Unsupported v3 music source: $music_source" >&2; exit 1; }; total_seconds=$((duration*5)); render_soft_music "$total_seconds"; ffmpeg -y -loglevel error -i "$work/video-only.mp4" -i "$work/soft-music.m4a" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 96k -shortest -movflags +faststart "$out"; audio_added=true; else mv "$work/video-only.mp4" "$out"; fi
+if [[ "$schema" == "isy-reel-request-v3" && "$music_mode" == "SOFT" ]]; then [[ "$music_source" == "BUILT_IN_AMBIENT_V1" ]] || { echo "Unsupported v3 music source: $music_source" >&2; exit 1; }; total_seconds="$(jq -r 'if ((.frame_durations // [])|length)==5 then ([.frame_durations[]|tonumber]|add) else ((.seconds_per_slide // 3)*5) end' "$request")"; render_soft_music "$total_seconds"; ffmpeg -y -loglevel error -i "$work/video-only.mp4" -i "$work/soft-music.m4a" -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 96k -shortest -movflags +faststart "$out"; audio_added=true; else mv "$work/video-only.mp4" "$out"; fi
 resolution="$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 "$out")"; [[ "$resolution" == "1080x1920" ]] || { echo "Unexpected Reel resolution: $resolution" >&2; exit 1; }
 if [[ "$schema" == "isy-reel-request-v3" && "$music_mode" == "SOFT" ]]; then audio_codec="$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name -of csv=p=0 "$out")"; [[ "$audio_codec" == "aac" ]] || { echo "Required AAC soft-music track is missing." >&2; exit 1; }; fi
 if [[ "$schema" == "isy-reel-request-v3" ]]; then
   [[ "$logo_rendered" == "true" ]] || { echo "Reel logo overlay was not verified; refusing READY status." >&2; exit 1; }
-  jq -n --arg status READY --arg render_id "$render_id" --arg schema "$schema" --argjson audio "$audio_added" --arg music_source "$music_source" --arg design_family "$design_family" --arg design_position "$design_position" --arg layout "$(jq -r '.overlay.layout // ""' "$request")" --arg logo_asset_used "$logo_asset_used" --argjson logo_rendered true --arg rendered_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{status:$status,render_id:$render_id,schema:$schema,audio:$audio,music_source:$music_source,design_family:$design_family,design_position:$design_position,layout:$layout,logo_asset_used:$logo_asset_used,logo_rendered:$logo_rendered,rendered_at:$rendered_at}' > "$status_out"
+  frame_durations_json="$(jq -c '.frame_durations // []' "$request")"
+  jq -n --arg status READY --arg render_id "$render_id" --arg schema "$schema" --argjson audio "$audio_added" --arg music_source "$music_source" --arg design_family "$design_family" --arg design_position "$design_position" --arg layout "$(jq -r '.overlay.layout // ""' "$request")" --arg logo_asset_used "$logo_asset_used" --argjson logo_rendered true --argjson frame_durations "$frame_durations_json" --arg rendered_at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" '{status:$status,render_id:$render_id,schema:$schema,audio:$audio,music_source:$music_source,design_family:$design_family,design_position:$design_position,layout:$layout,logo_asset_used:$logo_asset_used,logo_rendered:$logo_rendered,frame_durations:$frame_durations,rendered_at:$rendered_at}' > "$status_out"
 fi
 printf 'Rendered %s (%s) schema=%s render_id=%s cinematic=%s audio=%s\n' "$out" "$resolution" "$schema" "$render_id" "$cinematic_ok" "$audio_added"
