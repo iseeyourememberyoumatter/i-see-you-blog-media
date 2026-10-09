@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-e7620c0c-c1a6-44ec-b5c4-35313fe3e60d",
+  "week_id": "WEEK-916829A1F46E",
+  "content_id": "CONTENT-916829A1F46E-WED",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    4,
+    5,
+    4,
+    4
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-002",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "REVEAL_FOCUS",
+      "position": "CENTER",
+      "variant_key": "BG-000042::CENTER",
+      "asset_id": "BG-000042",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Refusing to laugh at a private inside joke that once defined you.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 243,
+            "y": 622,
+            "w": 594,
+            "h": 714,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 2,
+        "text": "Letting the heavy silence stretch out across the room.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 595,
+            "w": 650,
+            "h": 768,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      },
+      {
+        "index": 3,
+        "text": "We built our history on a shared cynicism I no longer believe.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 595,
+            "w": 650,
+            "h": 768,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "The loneliness of outgrowing a story while they recite the start.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 595,
+            "w": 650,
+            "h": 768,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "Observe the ancient scripts you still recite from pure habit.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "CHARCOAL",
+        "accent": "GOLD",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 243,
+            "y": 584,
+            "w": 594,
+            "h": 733,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/7d0f1d2ac19ef1304141d465e64375d4d90f611c/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-WED/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d010d1294072b7ac1bb51326b91d74bb0cfea4c1/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-WED/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/b77d0984e3a3fb08653917094bb720323094594c/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-WED/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/271483b36466969a904f58035bc7fa6c9a9bdc2d/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-WED/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/83abf5b66448ac2c3d19a1f5040ed3e99478c479/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-WED/slide-5.png"
+    ]
+  }
+}
