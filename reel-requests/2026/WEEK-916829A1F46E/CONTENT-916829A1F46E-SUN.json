@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-c919337e-e6ca-41f2-a753-4bbb3e1b17ef",
+  "week_id": "WEEK-916829A1F46E",
+  "content_id": "CONTENT-916829A1F46E-SUN",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    4,
+    4,
+    4,
+    4,
+    5
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-REFLECTION-001",
+    "category": "REFLECTION",
+    "subtype": "REFLECTION",
+    "mood": "REFLECTION",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-REFLECTION-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "CLOSING_GLOW",
+      "position": "LEFT",
+      "variant_key": "BG-000042::LEFT",
+      "asset_id": "BG-000042",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "The collective weight of managing other people's comfort.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 737,
+            "w": 680,
+            "h": 465,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 2,
+        "text": "Carried out at the exact expense of genuine relational depth.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "We mistake agreeableness for love, forgetting what care requires.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "The lifelong negotiation between keeping the peace and keeping the person.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 4,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "Look at the agreements you never signed but spent years defending.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 699,
+            "w": 680,
+            "h": 484,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "REFLECTION",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/5d244ec04158754a4bb39e83c7eade884b6ea6e6/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/58a9a384f7c4c3807b15f45fa19c657df63389c2/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/64e6611e28ca05049db893ab111c2b73334cba89/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3cc9932cf5b0c97cc34da74eb12e7aca5aa9d16a/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6a439c99b61e0432c776b19cf609ab1487f32f99/social/2026/WEEK-916829A1F46E/CONTENT-916829A1F46E-SUN/slide-5.png"
+    ]
+  }
+}
