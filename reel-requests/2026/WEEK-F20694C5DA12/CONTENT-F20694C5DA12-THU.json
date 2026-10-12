@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-9cd422f7-e8c2-437c-b6ef-1bd59cedacb1",
+  "week_id": "WEEK-F20694C5DA12",
+  "content_id": "CONTENT-F20694C5DA12-THU",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-RAIN-001",
+    "category": "RAIN",
+    "subtype": "RAIN",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-RAIN-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000029::RIGHT",
+      "asset_id": "BG-000029",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Years of hard-won experience suddenly feel invisible beside a tool you cannot navigate.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 526,
+            "w": 551,
+            "h": 714,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 7
+      },
+      {
+        "index": 2,
+        "text": "You stare at the dashboard, wondering if your past accomplishments still hold weight.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      },
+      {
+        "index": 3,
+        "text": "It is uncomfortable to return to the beginning after years of being the expert.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      },
+      {
+        "index": 4,
+        "text": "Mastery isn't knowing every new software instantly; it is knowing how to learn again.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      },
+      {
+        "index": 5,
+        "text": "Being new to a platform is not a loss of standing in the room.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 545,
+            "w": 551,
+            "h": 733,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4eacbf1f3907983bd10e4cd3b4ad7c1508913a6a/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/56e19ffad008db90f30fe3dbfae065ef5b5979ba/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/093bbd68f555e2626d717a1e31f8d69f448ab317/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d4b91bbb682e1c3d27e4d19826b9fabfddfd648b/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3cc271ab7e6415bf531a48c054a094f8d8471328/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-THU/slide-5.png"
+    ]
+  }
+}
