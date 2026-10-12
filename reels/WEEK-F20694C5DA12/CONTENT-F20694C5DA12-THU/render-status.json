@@ -1,0 +1,20 @@
+{
+  "status": "READY",
+  "render_id": "RENDER-9cd422f7-e8c2-437c-b6ef-1bd59cedacb1",
+  "schema": "isy-reel-request-v3",
+  "audio": true,
+  "music_source": "BUILT_IN_AMBIENT_V1",
+  "design_family": "LEFT_STORY",
+  "design_position": "RIGHT",
+  "layout": "NATIVE_STORY_DESIGN_V4",
+  "logo_asset_used": "DARK",
+  "logo_rendered": true,
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    6
+  ],
+  "rendered_at": "2026-10-12T16:24:24Z"
+}
