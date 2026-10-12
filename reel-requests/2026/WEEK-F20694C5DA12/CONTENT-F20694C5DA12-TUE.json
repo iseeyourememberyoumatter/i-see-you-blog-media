@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-00c79561-bbd7-40d3-8d2f-9cd7c4b28475",
+  "week_id": "WEEK-F20694C5DA12",
+  "content_id": "CONTENT-F20694C5DA12-TUE",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-001",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000029::LEFT",
+      "asset_id": "BG-000029",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You draft the update email, carefully wrapping a delay in heavy professional jargon.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 1006,
+            "w": 788,
+            "h": 503,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 2,
+        "text": "If the sentences sound structured enough, maybe no one will examine the gaps.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "Dense language rarely signals deep knowledge; often it is just fear looking tidy.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "Using complexity as armor keeps people at a distance, but it leaves you unsupported.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "You are allowed to say, 'I am still tracing the cause,' in plain words.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 968,
+            "w": 788,
+            "h": 561,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4aa9495bc0b36e60893070c86fc8068c95cb07ee/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6b6a63ce8e6c51aa2c40105ad1d3845910f6a7d1/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/56d5be0eec3597a8b29a20502211130fb676231d/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4c449abc56ff91e144834445220595cf3acab920/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/7f655f06c6b622b58eb3c0649a4e5be76203fdd7/social/2026/WEEK-F20694C5DA12/CONTENT-F20694C5DA12-TUE/slide-5.png"
+    ]
+  }
+}
