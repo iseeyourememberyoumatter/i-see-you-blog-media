@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-c5622d9f-9e11-4a04-83ed-869c6665af0c",
+  "week_id": "WEEK-8F2D3D5DA013",
+  "content_id": "CONTENT-8F2D3D5DA013-THU",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-WIND-002",
+    "category": "WIND",
+    "subtype": "NATURE_WIND",
+    "mood": "UNCERTAINTY",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-WIND-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "NATURAL_REPEAT"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000077::RIGHT",
+      "asset_id": "BG-000077",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You watch a coworker slowly clear their desk over weeks of quiet afternoons.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 526,
+            "w": 551,
+            "h": 714,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      },
+      {
+        "index": 2,
+        "text": "They pack a single box every Friday, long before giving formal notice.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "They are already gone in spirit, just waiting for the courage to say it.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 4,
+        "text": "Departure is rarely a single moment; it is a series of silent preludes.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 5,
+        "text": "We often know our destination long before we buy the ticket to go.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 545,
+            "w": 551,
+            "h": 733,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "UNCERTAINTY",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/416bb3679b1a9eaac370b32cceba56cb717bcc5e/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/cd15805cf3213ec97b6c6a2524a1a474d5c075e0/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/61572a67286079e6c202caf63ca822e9c28d44b0/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/16ca95a4b50a19c8b3368e4dc82c91be40da7812/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/2de12bc565cdbb8789f6d505353ed500ee15fc09/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-THU/slide-5.png"
+    ]
+  }
+}
