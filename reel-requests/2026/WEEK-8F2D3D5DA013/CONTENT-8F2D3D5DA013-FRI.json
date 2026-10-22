@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-c677baac-3fca-48b4-9433-5aa1a112208c",
+  "week_id": "WEEK-8F2D3D5DA013",
+  "content_id": "CONTENT-8F2D3D5DA013-FRI",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    6,
+    5,
+    5,
+    5
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-001",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "FRAMED_THOUGHT",
+      "position": "LEFT",
+      "variant_key": "BG-000077::LEFT",
+      "asset_id": "BG-000077",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You sit with your morning coffee and watch rain fall against the glass.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 238,
+            "y": 730,
+            "w": 605,
+            "h": 461,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 2,
+        "text": "A thought comes to mind, but no one is on the other side to catch it.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "You notice the stillness isn't heavy anymore; it is simply open and calm.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 4,
+        "text": "The end rarely arrives with a crash, but with a quiet dropping of guard.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 5,
+        "text": "Grief can feel remarkably like quietude once the long struggle stops.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 238,
+            "y": 710,
+            "w": 605,
+            "h": 480,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c1790ea5b93c43a37d88aa33a3161de32343fb3e/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-FRI/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4a60dacca7d933b1f34c76909e317a892a3ea8c9/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-FRI/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/6ef660e445c1ddf8ac75a68a661d4f17a324f57d/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-FRI/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a5a4aca7f90ad58d98bacc7408f8fec6c87b2380/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-FRI/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4fd0078ecfedaf8d72023011be9aeb4d394e88ec/social/2026/WEEK-8F2D3D5DA013/CONTENT-8F2D3D5DA013-FRI/slide-5.png"
+    ]
+  }
+}
