@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-a8f4c598-73da-4c1e-8147-713b9dcf7cc1",
+  "week_id": "WEEK-B1882F5B5934",
+  "content_id": "CONTENT-B1882F5B5934-TUE",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    6,
+    5,
+    5,
+    5,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-WIND-003",
+    "category": "WIND",
+    "subtype": "NATURE_WIND",
+    "mood": "UNCERTAINTY",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-WIND-003.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "NATURAL_REPEAT"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000053::LEFT",
+      "asset_id": "BG-000053",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Your fingers hover over the keyboard, ready to hit send on three sharp sentences.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 1006,
+            "w": 788,
+            "h": 503,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 2,
+        "text": "In the silence, a distant memory stirs?a past friendship ended by careless words.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "Winning the point back then felt necessary, right up until the connection vanished.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "You delete the draft, taking a slow breath before choosing a calmer way forward.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "The regret you carried didn't stay heavy; it became the patience you use today.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 968,
+            "w": 788,
+            "h": 561,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "UNCERTAINTY",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9814e1e1e549d7891a8ab3fc0ba88af7c47339b8/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/651bff484456a99f206739dbf4f1870c30f7bd28/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3ea2816f8447ad2c8cbf6a543f4b8c218f57107a/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/73de73abcc707342ba5c7aab37b4186b4d0151f7/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d557f381891cd8727c58bf290f3b683eb6c7add4/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-TUE/slide-5.png"
+    ]
+  }
+}
