@@ -1,0 +1,20 @@
+{
+  "status": "READY",
+  "render_id": "RENDER-ffc034c7-d1cd-4643-b303-adc2d7832bcd",
+  "schema": "isy-reel-request-v3",
+  "audio": true,
+  "music_source": "BUILT_IN_AMBIENT_V1",
+  "design_family": "FRAMED_THOUGHT",
+  "design_position": "LEFT",
+  "layout": "NATIVE_STORY_DESIGN_V4",
+  "logo_asset_used": "DARK",
+  "logo_rendered": true,
+  "frame_durations": [
+    6,
+    6,
+    5,
+    5,
+    6
+  ],
+  "rendered_at": "2026-10-26T22:14:19Z"
+}
