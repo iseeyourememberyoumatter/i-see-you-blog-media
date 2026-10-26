@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-32603c32-b9c5-48a8-949a-7c5ede76a146",
+  "week_id": "WEEK-B1882F5B5934",
+  "content_id": "CONTENT-B1882F5B5934-THU",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    6,
+    6,
+    6,
+    5,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-001",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LEFT_STORY",
+      "position": "RIGHT",
+      "variant_key": "BG-000053::RIGHT",
+      "asset_id": "BG-000053",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Across the fence, a young neighbor stands staring at a ruined renovation wall in panic.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 526,
+            "w": 551,
+            "h": 714,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 7
+      },
+      {
+        "index": 2,
+        "text": "You recognize that look?it is the exact fear of a costly error you once made.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 3,
+        "text": "Years ago, a ruined project felt like proof that you were out of your depth.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 4,
+        "text": "You gather your spare tools and walk over, offering help without advice or pity.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 372,
+            "y": 499,
+            "w": 607,
+            "h": 768,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      },
+      {
+        "index": 5,
+        "text": "Your own old failures allow you to bring steady calm into someone else's bad afternoon.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "OLIVE",
+        "accent": "OLIVE",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 400,
+            "y": 545,
+            "w": 551,
+            "h": 733,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 6
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/96b454a0e1f0265a660b2e10a75d4536b73d63a5/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-THU/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9955efe6500cf8eaf6b67cd3ef5f028ba1da70b4/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-THU/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9ddc05ef8a167e2d46c84a5ce59d2af7f6e3ca57/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-THU/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/db10b26b86d6e279266997b63bfc259271752c3a/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-THU/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3c1f820c86f4679ec8c8981a727f0be73bde1fb6/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-THU/slide-5.png"
+    ]
+  }
+}
