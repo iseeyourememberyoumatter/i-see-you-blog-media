@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-ac75e763-8684-46cb-94bb-093d3e848c41",
+  "week_id": "WEEK-B1882F5B5934",
+  "content_id": "CONTENT-B1882F5B5934-SUN",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    6,
+    5,
+    5,
+    6,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-002",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "CLOSING_GLOW",
+      "position": "RIGHT",
+      "variant_key": "BG-000053::RIGHT",
+      "asset_id": "BG-000053",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Looking back across the years, the missteps you once hid begin to look different.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 737,
+            "w": 680,
+            "h": 465,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 2,
+        "text": "The rushed exit, the sharp word, the missed visit, the foolish career detour.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 3,
+        "text": "For a long time, you carried them as heavy evidence of your own shortcomings.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "But time does not erase regret by wiping it clean; it converts it into vision.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 5,
+        "text": "The sharp ache of the past slowly settles into the quiet boundary protecting your present.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 699,
+            "w": 680,
+            "h": 484,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 56,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/9aba836c2ce92f1920a2a89b771f2cd14061441f/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a4b2ffc1b4a5cdfdd8ff4df4d733e7c0c707d406/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/537d196874bbd9a3e57bba4c743bc04a91bc348e/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/34811c92002a69a87b50ca7569aa7fe19f9df4e9/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/d3b81250a960f28d2501ca670e420fcc1e3db428/social/2026/WEEK-B1882F5B5934/CONTENT-B1882F5B5934-SUN/slide-5.png"
+    ]
+  }
+}
