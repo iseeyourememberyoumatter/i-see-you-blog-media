@@ -1,0 +1,220 @@
+{
+  "schema": "isy-story-request-v1",
+  "render_id": "STORY-RENDER-56fdf800-af36-4331-b022-833cf05d5945",
+  "week_id": "WEEK-9C8FA7B29508",
+  "content_id": "CONTENT-9C8FA7B29508-TUE",
+  "seconds_per_frame": 8,
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-002",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V2",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000054::LEFT",
+      "asset_id": "BG-000054",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Alone at a busy diner counter, holding a mug like armor.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 1006,
+            "w": 788,
+            "h": 503,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      },
+      {
+        "index": 2,
+        "text": "The fear of looking out of place makes your phone feel necessary.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      },
+      {
+        "index": 3,
+        "text": "Without a word, the person beside you slides half their newspaper over.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "A quiet gesture extending the boundary of the counter to include you.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "Belonging in transit rarely requires words, just shared space.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 968,
+            "w": 788,
+            "h": 561,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_STORY_V1",
+    "volume_db": -30,
+    "codec": "AAC",
+    "fade_seconds": 0.8
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c6180314380074d1551a4a05e444a6bd81b6412d/social/2026/WEEK-9C8FA7B29508/CONTENT-9C8FA7B29508-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/507219c1be15515482e3fac5a3bbd22f705a3ae2/social/2026/WEEK-9C8FA7B29508/CONTENT-9C8FA7B29508-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/93b50c4f6f7b59fda5421b9dc917a8ccf1cba186/social/2026/WEEK-9C8FA7B29508/CONTENT-9C8FA7B29508-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/12e9638b396eee793d1e3d0c921295d01a1d2fee/social/2026/WEEK-9C8FA7B29508/CONTENT-9C8FA7B29508-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/eedc856c731d81dd09b21a357e7d15db383f739f/social/2026/WEEK-9C8FA7B29508/CONTENT-9C8FA7B29508-TUE/slide-5.png"
+    ]
+  },
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ]
+}
