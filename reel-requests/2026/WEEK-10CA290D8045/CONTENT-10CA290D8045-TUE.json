@@ -1,0 +1,219 @@
+{
+  "schema": "isy-reel-request-v3",
+  "render_id": "RENDER-bf545190-4623-4a40-ad81-a0cae807311b",
+  "week_id": "WEEK-10CA290D8045",
+  "content_id": "CONTENT-10CA290D8045-TUE",
+  "seconds_per_slide": 3,
+  "frame_durations": [
+    5,
+    5,
+    6,
+    5,
+    6
+  ],
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-002",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V4",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "LOWER_REFLECTION",
+      "position": "LEFT",
+      "variant_key": "BG-000020::LEFT",
+      "asset_id": "BG-000020",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "You sit on the floor of a half-furnished room months after moving.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 1006,
+            "w": 788,
+            "h": 503,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      },
+      {
+        "index": 2,
+        "text": "A scratched brass desk lamp rests unplugged near an outlet in the corner.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 3,
+        "text": "Turning it on feels like admitting this room is where your life actually is now.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 4,
+        "text": "You reach out and plug it in, letting warm light spill across the floorboards.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 123,
+            "y": 979,
+            "w": 834,
+            "h": 557,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 5,
+        "text": "The light does not change what was lost. It simply illuminates where you stand today.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "DARK",
+        "footer_tone": "RUST",
+        "accent": "GOLD",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 146,
+            "y": 968,
+            "w": 788,
+            "h": 561,
+            "align": "START"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_V1",
+    "volume_db": -28,
+    "codec": "AAC"
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/4588bb1471682c464b9459032aec0be4c36d1a22/social/2026/WEEK-10CA290D8045/CONTENT-10CA290D8045-TUE/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3ef42938571895c4be4dffffec51d4fd1ac8b224/social/2026/WEEK-10CA290D8045/CONTENT-10CA290D8045-TUE/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/67cc622333ca8c68db5ed23af5c38b4c7fe45d3e/social/2026/WEEK-10CA290D8045/CONTENT-10CA290D8045-TUE/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/f7c76f5a9bb9878bcf9553f5889f4117fdbe89ef/social/2026/WEEK-10CA290D8045/CONTENT-10CA290D8045-TUE/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/a764711858b244dd9f1c79d8e58d34d921878442/social/2026/WEEK-10CA290D8045/CONTENT-10CA290D8045-TUE/slide-5.png"
+    ]
+  }
+}
