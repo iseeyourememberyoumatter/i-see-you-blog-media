@@ -1,0 +1,220 @@
+{
+  "schema": "isy-story-request-v1",
+  "render_id": "STORY-RENDER-dd2c40f2-e961-4aa3-b944-a06e3e1b1432",
+  "week_id": "WEEK-57C7922E22A9",
+  "content_id": "CONTENT-57C7922E22A9-SUN",
+  "seconds_per_frame": 8,
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-002",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-002.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V2",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "CLOSING_GLOW",
+      "position": "LEFT",
+      "variant_key": "BG-000097::LEFT",
+      "asset_id": "BG-000097",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "We inherit the armor long before we understand why the battle started.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 737,
+            "w": 680,
+            "h": 465,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 4
+      },
+      {
+        "index": 2,
+        "text": "Every rule about tidiness, readiness, and control served a protective purpose once.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 3,
+        "text": "The delicate, quiet labor of laying down defenses without feeling entirely exposed.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 4,
+        "text": "Recognizing that the patterns keeping us safe are often the ones keeping us distant.",
+        "closing": false,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 6,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 177,
+            "y": 710,
+            "w": 726,
+            "h": 518,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 5,
+        "text": "Noticing the profound freedom found in unlearning the guards we never chose.",
+        "closing": true,
+        "text_tone": "LIGHT",
+        "logo_tone": "LIGHT",
+        "footer_tone": "BURGUNDY",
+        "accent": "BURGUNDY",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 200,
+            "y": 699,
+            "w": 680,
+            "h": 484,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_STORY_V1",
+    "volume_db": -30,
+    "codec": "AAC",
+    "fade_seconds": 0.8
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/bae802494f34d23d97840981d95973217c6b524f/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-SUN/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/412cca46057f96cf04edbd21fbdb50546b9e56e5/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-SUN/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/c8ffd38d24cf3dfea1862346a6b2074b9a4860ad/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-SUN/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/e5096cd7901cebaf22ec0c4bbc13206fa20d02e5/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-SUN/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/3fcd448573729c976748b62ca56bc2e63a9b8c37/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-SUN/slide-5.png"
+    ]
+  },
+  "frame_durations": [
+    5,
+    5,
+    5,
+    6,
+    5
+  ]
+}
