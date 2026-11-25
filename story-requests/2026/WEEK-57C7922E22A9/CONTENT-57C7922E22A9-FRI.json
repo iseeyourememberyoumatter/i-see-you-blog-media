@@ -1,0 +1,220 @@
+{
+  "schema": "isy-story-request-v1",
+  "render_id": "STORY-RENDER-cf80eb47-3f3f-43ff-9aae-00e7a0fc04e2",
+  "week_id": "WEEK-57C7922E22A9",
+  "content_id": "CONTENT-57C7922E22A9-FRI",
+  "seconds_per_frame": 8,
+  "cinematic": {
+    "media_id": "ISY-CIN-FOG-001",
+    "category": "FOG",
+    "subtype": "FOG_CLOUD",
+    "mood": "HEAVINESS",
+    "public_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/cinematic/phase-1/ISY-CIN-FOG-001.mp4",
+    "duration_seconds": 8,
+    "loop_mode": "SEAMLESS"
+  },
+  "overlay": {
+    "layout": "NATIVE_STORY_DESIGN_V2",
+    "brand": {
+      "name": "I See You",
+      "tagline": "Remember, You Matter",
+      "font_family": "Georgia",
+      "logo_light_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-light",
+      "logo_dark_url": "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/main/brand-assets/i-see-you-logo-dark"
+    },
+    "design": {
+      "family": "FRAMED_THOUGHT",
+      "position": "RIGHT",
+      "variant_key": "BG-000097::RIGHT",
+      "asset_id": "BG-000097",
+      "background_profile": {
+        "preferredTextTone": "",
+        "filmTone": "",
+        "filmStrength": "",
+        "textZoneSupport": "",
+        "logoZoneSupport": ""
+      },
+      "palette": {
+        "deep_teal": "#03363D",
+        "warm_ivory": "#F7F1E7",
+        "warm_accent": "#D88945",
+        "white": "#FFFFFF",
+        "dark_text": "#243C40",
+        "gold": "#D89B2B",
+        "olive": "#556B2F",
+        "rust": "#9A4A18",
+        "plum": "#55305D",
+        "teal": "#0C6574",
+        "charcoal": "#171B1D",
+        "burgundy": "#8F1F3D"
+      }
+    },
+    "slides": [
+      {
+        "index": 1,
+        "text": "Clearing out an old childhood bookshelf filled with forgotten paperbacks.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 238,
+            "y": 730,
+            "w": 605,
+            "h": 461,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 2,
+        "text": "Finding dozens of self-help and psychology books bought by a parent decades ago.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 5
+      },
+      {
+        "index": 3,
+        "text": "They were trying to build a map out of a maze.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 60,
+        "estimated_lines": 3
+      },
+      {
+        "index": 4,
+        "text": "Shifting from frustration with parental anxiety to a quiet understanding of fear.",
+        "closing": false,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 215,
+            "y": 703,
+            "w": 650,
+            "h": 515,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 58,
+        "estimated_lines": 6
+      },
+      {
+        "index": 5,
+        "text": "Looking at old family inheritances with soft eyes instead of sharp instruments.",
+        "closing": true,
+        "text_tone": "DARK",
+        "logo_tone": "DARK",
+        "footer_tone": "PLUM",
+        "accent": "PLUM",
+        "duration_seconds": 5,
+        "fit": {
+          "min_font_px": 44,
+          "max_font_px": 60,
+          "max_lines": 8,
+          "box": {
+            "x": 238,
+            "y": 710,
+            "w": 605,
+            "h": 480,
+            "align": "CENTER"
+          }
+        },
+        "fit_ok": true,
+        "estimated_font_px": 56,
+        "estimated_lines": 5
+      }
+    ],
+    "canvas": {
+      "width": 1080,
+      "height": 1920
+    },
+    "safe_zone": {
+      "top_px": 250,
+      "bottom_px": 310,
+      "left_px": 70,
+      "right_px": 70
+    },
+    "text_fit": {
+      "min_font_px": 44,
+      "max_font_px": 60,
+      "max_lines": 8
+    }
+  },
+  "music": {
+    "mode": "SOFT",
+    "mood": "HEAVINESS",
+    "source": "BUILT_IN_AMBIENT_STORY_V1",
+    "volume_db": -30,
+    "codec": "AAC",
+    "fade_seconds": 0.8
+  },
+  "fallback": {
+    "allow_static_slides": true,
+    "static_slides": [
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/7a5c070ebc259f2cdd02929cec552266ddcd4094/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-FRI/slide-1.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/f119208135f01feac67f2a89d083c8f76672c78f/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-FRI/slide-2.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/958a7bf368a04f2a02b1d9346a424ee12f2ca381/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-FRI/slide-3.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/955946c8062ee07232d654723bee0974da2252df/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-FRI/slide-4.png",
+      "https://raw.githubusercontent.com/iseeyourememberyoumatter/i-see-you-blog-media/71eac74327265e2da60cf22a53095f8690ab897d/social/2026/WEEK-57C7922E22A9/CONTENT-57C7922E22A9-FRI/slide-5.png"
+    ]
+  },
+  "frame_durations": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ]
+}
